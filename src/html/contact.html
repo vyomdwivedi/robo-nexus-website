@@ -1,38 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Robo Nexus</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <title>Robo Nexus</title>
 </head>
+
 <body>
-    <div class="container">
-        <div class="navbar">
-            <ul>
-                <li class="logo"><img src="../assets/images/Robo_Nexus_Logo.png" class="nav-logo" alt="Logo"></li>
-                <li><a class="nav-links" href="../../index.html">Home</a></li>
-                <li><a class="nav-links" href="about.html">About Us</a></li>
-                <li><a class="nav-links" href="team.html">Team</a></li>
-                <li><a class="nav-links" href="comps.html">Competitions</a></li>
-                <li><a class="nav-links-active" href="#">Contact Us</a></li>
-            </ul>
+  <div class="container">
+    <nav class="navbar">
+      <div class="navbar-content">
+        <div class="nav-logo">
+          <a href="../../index.html">
+            <img src="../assets/images/Robo_Nexus_Logo.png" class="nav-logo" alt="Logo" />
+          </a>
         </div>
-        <div class="header">
-            <h1>Robo Nexus</h1>
-        </div>
-        <div class="content">
-            <div class="left">
-                <h2>Robo Nexus</h2>
-                <p>Robo Nexus is a company that specializes in the development of robots for various purposes. We have a team of highly skilled engineers who are dedicated to creating robots that can help make the world a better place. Our robots are designed to be efficient, reliable, and easy to use. Whether you need a robot for industrial automation, medical applications, or any other purpose, we can help you find the perfect solution.</p>
+        <ul class="nav-links-ul">
+          <li>
+            <a class="nav-links" href="about.html">About Us</a>
+          </li>
+          <li class="separator">|</li>
+          <li><a class="nav-links" href="team.html">Team</a></li>
+          <li class="separator">|</li>
+          <li>
+            <a class="nav-links" href="events.html">Events</a>
+          </li>
+          <li class="separator">|</li>
+          <li><a class="nav-links" href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="content">
+      <div class="contact-text">Contact Us!</div>
+      <div class="contact-section" id="contact">
+        <div class="contact-form-div">
+          <form class="contact-form">
+            <div class="form-row">
+              <div class="contact-name">
+                <input class="form-control" type="text" id="name" placeholder="Your Name" />
+              </div>
+              <div class="contact-email">
+                <input class="form-control" type="text" id="email" placeholder="Email Address" />
+              </div>
+              <div class="contact-subject">
+                <input class="form-control" type="text" id="subject" placeholder="Subject" />
+              </div>
+              <div class="contact-message">
+                <textarea class="form-control" id="message" rows="6" placeholder="Enter message here.."></textarea>
+              </div>
+              <button type="button" onclick="sendMail();" class="contact-send-button">
+                Send Message
+              </button>
             </div>
-            <div class="right">
-                <img src="robot.jpg" alt="Robot">
-            </div>
+          </form>
         </div>
-        <div class="footer">
-            <p>&copy; 2024 Robo Nexus. All rights reserved.</p>
+        <div class="contact-info">
+          <div class="contact-info-text">Contact Information</div>
+          <div class="contact-info-details">
+            <p><i class="fas fa-phone"></i> +91 XXXXXX6613</p>
+            <p>
+              <i class="fas fa-envelope"></i>
+              roboticsclubaisg46@gmail.com
+            </p>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Amity
+              International School, Sector-46, Gurugram
+            </p>
+          </div>
         </div>
+      </div>
     </div>
+    <footer class="footer">
+      <p>&copy; 2024 Robo Nexus. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="../js/contact.js"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("LhPol6L9HRAPF2BC8");
+    })();
+  </script>
 </body>
+
 </html>
