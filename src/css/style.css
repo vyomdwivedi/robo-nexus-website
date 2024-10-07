@@ -1,7 +1,14 @@
 *{
-    background-color: #000000;
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.content{
+    background: #000000;
+}
+.container{
+    background: #000000
 }
 
 
@@ -192,6 +199,7 @@ input, textarea{
     border: 1px solid #02cadc;
     border-radius: 4px;
     resize: vertical;
+    background: #000000;
 }
 .contact-send-button{
     padding: 1vw;
@@ -221,7 +229,78 @@ input, textarea{
     color: #47a0b8;
     text-align: center;
 }
+.contact-info-details{
+    color: #ffffff;
+    padding: 20px
+}
+.contact-info-details p i{
+    padding: 5px;
+}
 
+
+
+
+
+/* EVENTS PAGE */
+.events-text{
+    font-size: 3vw;
+    font-weight: 900;
+    color: #ffffff;
+    padding: 1vw;
+    text-align: center;
+}
+
+
+
+
+
+/* TEAM PAGE */
+.team-text{
+    font-size: 3vw;
+    font-weight: 900;
+    color: #ffffff;
+    padding: 1vw;
+    text-align: center;
+}
+.team-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 20px;
+}
+.team-member{
+    background-color: #2c2c2c;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.member-name{
+    font-size: 1vw;
+    font-weight: 800;
+    color: #ffffff;
+}
+.member-post{
+    font-size: 0.75vw;
+    color: #47a0b8;
+    font-weight: 700;
+}
+.member-socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: auto;
+    width: auto;
+}
+.member-socials i{
+    font-size: 30px;
+    color: #ffffff;
+    padding: 10px;
+}
 
 
 
@@ -229,16 +308,25 @@ input, textarea{
 
 /* FOOTER */
 .footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     background: #000000;
-    font-weight: bold;
-    bottom : 0;
     width: 100%;
-    position: sticky;
+    height: auto;
+    font-weight: 800;
+    bottom: 0;
+    width: 100%;
 }
+.footer p{
+    padding: 10px;
+    font-size: 1vw;
+    color: #ffffff;
+}
+
+
+
+
+
+/* RESPONSIVENESS */
 @media screen and (min-width: 128px) and (max-width: 900px){
     
 }
