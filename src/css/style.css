@@ -61,7 +61,7 @@ body{
 .nav-links, .nav-links-active{
     background: #000000;
     padding: 5px;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
 }
@@ -79,7 +79,7 @@ body{
     align-items: center;
     padding: 10px;
     font-weight: 900;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 
@@ -205,7 +205,7 @@ input, textarea{
     padding: 12px;
     border: 1px solid #6e6e6e;
     border-radius: 5px;
-    resize: vertical;
+    resize: none;
     background: #2c2c2c;
 }
 .contact-send-button{
@@ -309,6 +309,11 @@ input, textarea{
     font-size: 30px;
     color: #ffffff;
     padding: 10px;
+}
+.member-socials i:hover{
+    cursor: pointer;
+    color: #02cadc;
+    font-size: 25px;
 }
 
 
