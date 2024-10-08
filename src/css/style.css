@@ -187,6 +187,10 @@ body{
     padding: 1vw;
     text-align: center;
 }
+.contact-form-div{
+    background: #141414;
+    border-radius: 5px;
+}
 .contact-form{
     padding: 2vw;
     margin-right: 2vw;
@@ -199,25 +203,26 @@ body{
 input, textarea{
     width: 100%;
     padding: 12px;
-    border: 1px solid #02cadc;
-    border-radius: 4px;
+    border: 1px solid #6e6e6e;
+    border-radius: 5px;
     resize: vertical;
-    background: #000000;
+    background: #2c2c2c;
 }
 .contact-send-button{
     padding: 1vw;
     margin: 1vw;
     font-size: 1vw;
     font-weight: 700;
-    border: 2px solid #02cadc;
-    background: #000000;
-    color: #02cadc;
+    border: 2px solid #004e55;
+    border-radius: 5px;
+    background: #2c2c2c;
+    color: #00b9ca;
 }
 .contact-send-button:hover{
     cursor: pointer;
-    color: #ffffff;
-    background: #02cadc;
-    border: 2px solid #ffffff;
+    color: #00b9ca;
+    background: #004e55;
+    border: 2px solid #000000;
 }
 .contact-info{
     padding: 2vw;
@@ -375,15 +380,19 @@ input, textarea{
     /* Events Page */
 
     /* Conatact Page */
+    .contact-form-div{
+        width: 100%;
+    }
+    .contact-form-div form{
+        width: 80%;
+        align-items: center;
+    }
     .contact-section{
         display: flex;
         flex-direction: column;
         justify-content: center;
         background: #000000;
         padding-bottom: 75px;
-    }
-    .contact-form-div form{
-        width: 75%;
     }
     .contact-send-button{
         font-size: 15px;
