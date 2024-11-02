@@ -26,7 +26,6 @@ body{
     align-items: center;
     background: #000000;
     padding: 10px;
-    position: relative;
 }
 .nav-links-ul{
     display: flex;
@@ -34,29 +33,17 @@ body{
     justify-content: center;
     align-items: center;
     list-style-type: none;
-    margin: 0;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
 }
 .nav-links{
     color: #ffffff;
     text-decoration: none;
-    position: relative;
 }
-.navbar ul li a::after{
-    content: '';
-    width: 0;
-    height: 4px;
-    left: 0;
-    bottom: 0;
-    position: absolute;
-    border-radius: 2px;
-    background: #02cadc;    
-    transition: width 0.3s;
+.navbar ul li{
+    display: inline;
+    padding: 10px;
 }
-.navbar ul li a:hover::after{
-    width: 75%;
+.navbar ul li a:hover{
+    color: #02cadc;
 }
 .nav-links, .nav-links-active{
     background: #000000;
@@ -71,15 +58,6 @@ body{
 }
 .nav-logo:hover{
     cursor: pointer;
-}
-.separator{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    font-weight: 900;
-    font-size: 25px;
 }
 
 
@@ -128,6 +106,7 @@ body{
     font-size: 30px;
     color: #ffffff;
     padding: 10px;
+    margin-top: -20px;
 }
 .socials i:hover{
     cursor: pointer;
@@ -309,6 +288,7 @@ input, textarea{
     font-size: 30px;
     color: #ffffff;
     padding: 10px;
+    font-weight: normal;
 }
 .member-socials i:hover{
     cursor: pointer;
