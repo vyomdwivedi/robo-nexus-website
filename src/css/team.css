@@ -1,0 +1,54 @@
+body {
+  background-color: #000;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.card {
+  background-color: #111;
+  color: #fff;
+  width: 250px;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
+}
+
+.profile-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+h2 {
+  margin: 10px 0 5px;
+  font-size: 20px;
+}
+
+.role {
+  color: #00ff7f;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.social-icons a {
+  color: #bbb;
+  margin: 0 8px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #00ff7f;
+}
