@@ -52,3 +52,43 @@ h2 {
 .social-icons a:hover {
   color: #00ff7f;
 }
+.navbar-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #000000;
+    padding: 10px;
+}
+.nav-links-ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+.nav-links{
+    color: #ffffff;
+    text-decoration: none;
+}
+.navbar ul li{
+    display: inline;
+    padding: 10px;
+}
+.navbar ul li a:hover{
+    color: #02cadc;
+}
+.nav-links, .nav-links-active{
+    background: #000000;
+    padding: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+.nav-logo{
+    width: 100px;
+    height: auto;
+}
+.nav-logo:hover{
+    cursor: pointer;
+}
