@@ -1,431 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        />
-        <link rel="stylesheet" href="../css/style.css" />
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Robo Nexus</title>
+
+    <style>
+        .team-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            padding: 20px;
+        }
+        .card {
+            width: 260px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .profile-img {
+            width: 120px;
+            border-radius: 50%;
+        }
+        .role {
+            color: #555;
+            margin: 6px 0;
+        }
+        .social-icons a {
+            margin: 0 8px;
+            font-size: 20px;
+        }
+    </style>
 </head>
-        <title>Robo Nexus</title>
-    </head>
 
-    <body>
-                <div class="container">
-            <nav class="navbar">
-                <div class="navbar-content">
-                    <div class="nav-logo">
-                        <a href="../../index.html">
-                            <img
-                                src="../assets/images/Robo_Nexus_Logo.png"
-                                class="nav-logo"
-                                alt="Logo"
-                            />
-                        </a>
-                    </div>
-                    <ul class="nav-links-ul">
-                        <li>
-                            <a class="nav-links" href="about.html">About Us</a>
-                        </li>
-                        <li class="separator">|</li>
-                        <li><a class="nav-links" href="team.html">Team</a></li>
-                        <li class="separator">|</li>
-                        <li>
-                            <a class="nav-links" href="events.html">Events</a>
-                        </li>
-                        <li class="separator">|</li>
-                        <li>
-                            <a class="nav-links" href="contact.html">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+<body>
+
+<!-- ✅ NAVBAR ADDED -->
+<nav class="navbar">
+    <div class="logo">Robo Nexus</div>
+    <ul class="nav-links">
+        <li><a href="../html/index.html">Home</a></li>
+        <li><a href="../html/achievement.html">Achievements</a></li>
+        <li><a href="../html/ourteam.html">Our Team</a></li>
+        <li><a href="../html/ebooks.html">E-Books</a></li>
+        <li><a href="../html/contact.html">Contact</a></li>
+    </ul>
+    <button class="menu-icon" onclick="toggleMenu()">☰</button>
+</nav>
+
+<script>
+    function toggleMenu() {
+        document.querySelector(".nav-links").classList.toggle("active");
+    }
+</script>
+<!-- END NAVBAR -->
+
 <center>
-      <div class="card">
-<img src="https://raw.githubusercontent.com/vyomdwivedi/robo-nexus-website/67f9be355a4054996f76a9301945a3c887209adf/src/assets/images/unnamed.png" alt="Profile Image" class="profile-img" />
-    <h2>Atharv Mandlavdiya</h2>
-    <p class="role">President</p>
+    <div class="team-container">
 
-    <div class="social-icons">
-    <a href="https://github.com/AtharvM02222" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/atharvmandlavdiya/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://atharvmandlavdiya.me" target="_blank"><i class="fas fa-globe"></i></a>
-    <a href="https://www.hackerrank.com/profile/Atharv0M" target="_blank"><i class="fab fa-hackerrank"></i></a>
-    <a href="https://g.dev/atharvmandlavdiya" target="_blank"><i class="fas fa-code"></i></a>
-    <a href="https://itch.io/profile/atharvam" target="_blank"><i class="fab fa-itch-io"></i></a>
+        <!-- Single Team Member Card -->
+        <div class="card">
+            <img src="../assets/images/unnamed.png" class="profile-img" />
+            <h2>Atharv Mandlavdiya</h2>
+            <p class="role">President</p>
+
+            <div class="social-icons">
+                <a href="https://github.com/AtharvM02222"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/atharvmandlavdiya/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://atharvmandlavdiya.me"><i class="fas fa-globe"></i></a>
+                <a href="https://www.hackerrank.com/profile/Atharv0M"><i class="fab fa-hackerrank"></i></a>
+                <a href="https://g.dev/atharvmandlavdiya"><i class="fas fa-code"></i></a>
+                <a href="https://itch.io/profile/atharvam"><i class="fab fa-itch-io"></i></a>
+            </div>
+        </div>
+
+        <!-- Add more cards below for other members -->
+
     </div>
-  </div>
-
-          <div class="card">
-<img src="https://raw.githubusercontent.com/vyomdwivedi/robo-nexus-website/67f9be355a4054996f76a9301945a3c887209adf/src/assets/images/unnamed.png" alt="Profile Image" class="profile-img" />
-    <h2>Atharv Mandlavdiya</h2>
-    <p class="role">President</p>
-
-    <div class="social-icons">
-    <a href="https://github.com/AtharvM02222" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/atharvmandlavdiya/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://atharvmandlavdiya.me" target="_blank"><i class="fas fa-globe"></i></a>
-    <a href="https://www.hackerrank.com/profile/Atharv0M" target="_blank"><i class="fab fa-hackerrank"></i></a>
-    <a href="https://g.dev/atharvmandlavdiya" target="_blank"><i class="fas fa-code"></i></a>
-    <a href="https://itch.io/profile/atharvam" target="_blank"><i class="fab fa-itch-io"></i></a>
-    </div>
-  </div>
-
-          <div class="card">
-<img src="https://raw.githubusercontent.com/vyomdwivedi/robo-nexus-website/67f9be355a4054996f76a9301945a3c887209adf/src/assets/images/unnamed.png" alt="Profile Image" class="profile-img" />
-    <h2>Atharv Mandlavdiya</h2>
-    <p class="role">President</p>
-
-    <div class="social-icons">
-    <a href="https://github.com/AtharvM02222" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/atharvmandlavdiya/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://atharvmandlavdiya.me" target="_blank"><i class="fas fa-globe"></i></a>
-    <a href="https://www.hackerrank.com/profile/Atharv0M" target="_blank"><i class="fab fa-hackerrank"></i></a>
-    <a href="https://g.dev/atharvmandlavdiya" target="_blank"><i class="fas fa-code"></i></a>
-    <a href="https://itch.io/profile/atharvam" target="_blank"><i class="fab fa-itch-io"></i></a>
-    </div>
-  </div>
-
-          <div class="card">
-<img src="https://raw.githubusercontent.com/vyomdwivedi/robo-nexus-website/67f9be355a4054996f76a9301945a3c887209adf/src/assets/images/unnamed.png" alt="Profile Image" class="profile-img" />
-    <h2>Atharv Mandlavdiya</h2>
-    <p class="role">President</p>
-
-    <div class="social-icons">
-    <a href="https://github.com/AtharvM02222" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/atharvmandlavdiya/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://atharvmandlavdiya.me" target="_blank"><i class="fas fa-globe"></i></a>
-    <a href="https://www.hackerrank.com/profile/Atharv0M" target="_blank"><i class="fab fa-hackerrank"></i></a>
-    <a href="https://g.dev/atharvmandlavdiya" target="_blank"><i class="fas fa-code"></i></a>
-    <a href="https://itch.io/profile/atharvam" target="_blank"><i class="fab fa-itch-io"></i></a>
-    </div>
-  </div>
-
-          <div class="card">
-<img src="https://raw.githubusercontent.com/vyomdwivedi/robo-nexus-website/67f9be355a4054996f76a9301945a3c887209adf/src/assets/images/unnamed.png" alt="Profile Image" class="profile-img" />
-    <h2>Atharv Mandlavdiya</h2>
-    <p class="role">President</p>
-
-    <div class="social-icons">
-    <a href="https://github.com/AtharvM02222" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/atharvmandlavdiya/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://atharvmandlavdiya.me" target="_blank"><i class="fas fa-globe"></i></a>
-    <a href="https://www.hackerrank.com/profile/Atharv0M" target="_blank"><i class="fab fa-hackerrank"></i></a>
-    <a href="https://g.dev/atharvmandlavdiya" target="_blank"><i class="fas fa-code"></i></a>
-    <a href="https://itch.io/profile/atharvam" target="_blank"><i class="fab fa-itch-io"></i></a>
-    </div>
-  </div>
-
-          <div class="card">
-<img src="https://raw.githubusercontent.com/vyomdwivedi/robo-nexus-website/67f9be355a4054996f76a9301945a3c887209adf/src/assets/images/unnamed.png" alt="Profile Image" class="profile-img" />
-    <h2>Atharv Mandlavdiya</h2>
-    <p class="role">President</p>
-
-    <div class="social-icons">
-    <a href="https://github.com/AtharvM02222" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/atharvmandlavdiya/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://atharvmandlavdiya.me" target="_blank"><i class="fas fa-globe"></i></a>
-    <a href="https://www.hackerrank.com/profile/Atharv0M" target="_blank"><i class="fab fa-hackerrank"></i></a>
-    <a href="https://g.dev/atharvmandlavdiya" target="_blank"><i class="fas fa-code"></i></a>
-    <a href="https://itch.io/profile/atharvam" target="_blank"><i class="fab fa-itch-io"></i></a>
-    </div>
-  </div>
-
-          <div class="card">
-<img src="https://raw.githubusercontent.com/vyomdwivedi/robo-nexus-website/67f9be355a4054996f76a9301945a3c887209adf/src/assets/images/unnamed.png" alt="Profile Image" class="profile-img" />
-    <h2>Atharv Mandlavdiya</h2>
-    <p class="role">President</p>
-
-    <div class="social-icons">
-    <a href="https://github.com/AtharvM02222" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/atharvmandlavdiya/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://atharvmandlavdiya.me" target="_blank"><i class="fas fa-globe"></i></a>
-    <a href="https://www.hackerrank.com/profile/Atharv0M" target="_blank"><i class="fab fa-hackerrank"></i></a>
-    <a href="https://g.dev/atharvmandlavdiya" target="_blank"><i class="fas fa-code"></i></a>
-    <a href="https://itch.io/profile/atharvam" target="_blank"><i class="fab fa-itch-io"></i></a>
-    </div>
-  </div>
-
-          <div class="card">
-<img src="https://raw.githubusercontent.com/vyomdwivedi/robo-nexus-website/67f9be355a4054996f76a9301945a3c887209adf/src/assets/images/unnamed.png" alt="Profile Image" class="profile-img" />
-    <h2>Atharv Mandlavdiya</h2>
-    <p class="role">President</p>
-
-    <div class="social-icons">
-    <a href="https://github.com/AtharvM02222" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/atharvmandlavdiya/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://atharvmandlavdiya.me" target="_blank"><i class="fas fa-globe"></i></a>
-    <a href="https://www.hackerrank.com/profile/Atharv0M" target="_blank"><i class="fab fa-hackerrank"></i></a>
-    <a href="https://g.dev/atharvmandlavdiya" target="_blank"><i class="fas fa-code"></i></a>
-    <a href="https://itch.io/profile/atharvam" target="_blank"><i class="fab fa-itch-io"></i></a>
-    </div>
-  </div>
-
-          <div class="card">
-<img src="https://raw.githubusercontent.com/vyomdwivedi/robo-nexus-website/67f9be355a4054996f76a9301945a3c887209adf/src/assets/images/unnamed.png" alt="Profile Image" class="profile-img" />
-    <h2>Atharv Mandlavdiya</h2>
-    <p class="role">President</p>
-
-    <div class="social-icons">
-    <a href="https://github.com/AtharvM02222" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/atharvmandlavdiya/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://atharvmandlavdiya.me" target="_blank"><i class="fas fa-globe"></i></a>
-    <a href="https://www.hackerrank.com/profile/Atharv0M" target="_blank"><i class="fab fa-hackerrank"></i></a>
-    <a href="https://g.dev/atharvmandlavdiya" target="_blank"><i class="fas fa-code"></i></a>
-    <a href="https://itch.io/profile/atharvam" target="_blank"><i class="fab fa-itch-io"></i></a>
-    </div>
-  </div>
-
-          <div class="card">
-<img src="https://raw.githubusercontent.com/vyomdwivedi/robo-nexus-website/67f9be355a4054996f76a9301945a3c887209adf/src/assets/images/unnamed.png" alt="Profile Image" class="profile-img" />
-    <h2>Atharv Mandlavdiya</h2>
-    <p class="role">President</p>
-
-    <div class="social-icons">
-    <a href="https://github.com/AtharvM02222" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/atharvmandlavdiya/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://atharvmandlavdiya.me" target="_blank"><i class="fas fa-globe"></i></a>
-    <a href="https://www.hackerrank.com/profile/Atharv0M" target="_blank"><i class="fab fa-hackerrank"></i></a>
-    <a href="https://g.dev/atharvmandlavdiya" target="_blank"><i class="fas fa-code"></i></a>
-    <a href="https://itch.io/profile/atharvam" target="_blank"><i class="fab fa-itch-io"></i></a>
-    </div>
-  </div>
-
-          <div class="card">
-<img src="https://raw.githubusercontent.com/vyomdwivedi/robo-nexus-website/67f9be355a4054996f76a9301945a3c887209adf/src/assets/images/unnamed.png" alt="Profile Image" class="profile-img" />
-    <h2>Atharv Mandlavdiya</h2>
-    <p class="role">President</p>
-
-    <div class="social-icons">
-    <a href="https://github.com/AtharvM02222" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/atharvmandlavdiya/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://atharvmandlavdiya.me" target="_blank"><i class="fas fa-globe"></i></a>
-    <a href="https://www.hackerrank.com/profile/Atharv0M" target="_blank"><i class="fab fa-hackerrank"></i></a>
-    <a href="https://g.dev/atharvmandlavdiya" target="_blank"><i class="fas fa-code"></i></a>
-    <a href="https://itch.io/profile/atharvam" target="_blank"><i class="fab fa-itch-io"></i></a>
-    </div>
-  </div>
-
-          <div class="card">
-<img src="https://raw.githubusercontent.com/vyomdwivedi/robo-nexus-website/67f9be355a4054996f76a9301945a3c887209adf/src/assets/images/unnamed.png" alt="Profile Image" class="profile-img" />
-    <h2>Atharv Mandlavdiya</h2>
-    <p class="role">President</p>
-
-    <div class="social-icons">
-    <a href="https://github.com/AtharvM02222" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/atharvmandlavdiya/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://atharvmandlavdiya.me" target="_blank"><i class="fas fa-globe"></i></a>
-    <a href="https://www.hackerrank.com/profile/Atharv0M" target="_blank"><i class="fab fa-hackerrank"></i></a>
-    <a href="https://g.dev/atharvmandlavdiya" target="_blank"><i class="fas fa-code"></i></a>
-    <a href="https://itch.io/profile/atharvam" target="_blank"><i class="fab fa-itch-io"></i></a>
-    </div>
-  </div>
-
-          <div class="card">
-<img src="https://raw.githubusercontent.com/vyomdwivedi/robo-nexus-website/67f9be355a4054996f76a9301945a3c887209adf/src/assets/images/unnamed.png" alt="Profile Image" class="profile-img" />
-    <h2>Atharv Mandlavdiya</h2>
-    <p class="role">President</p>
-
-    <div class="social-icons">
-    <a href="https://github.com/AtharvM02222" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/atharvmandlavdiya/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://atharvmandlavdiya.me" target="_blank"><i class="fas fa-globe"></i></a>
-    <a href="https://www.hackerrank.com/profile/Atharv0M" target="_blank"><i class="fab fa-hackerrank"></i></a>
-    <a href="https://g.dev/atharvmandlavdiya" target="_blank"><i class="fas fa-code"></i></a>
-    <a href="https://itch.io/profile/atharvam" target="_blank"><i class="fab fa-itch-io"></i></a>
-    </div>
-  </div>
-
-          <div class="card">
-<img src="https://raw.githubusercontent.com/vyomdwivedi/robo-nexus-website/67f9be355a4054996f76a9301945a3c887209adf/src/assets/images/unnamed.png" alt="Profile Image" class="profile-img" />
-    <h2>Atharv Mandlavdiya</h2>
-    <p class="role">President</p>
-
-    <div class="social-icons">
-    <a href="https://github.com/AtharvM02222" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/atharvmandlavdiya/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://atharvmandlavdiya.me" target="_blank"><i class="fas fa-globe"></i></a>
-    <a href="https://www.hackerrank.com/profile/Atharv0M" target="_blank"><i class="fab fa-hackerrank"></i></a>
-    <a href="https://g.dev/atharvmandlavdiya" target="_blank"><i class="fas fa-code"></i></a>
-    <a href="https://itch.io/profile/atharvam" target="_blank"><i class="fab fa-itch-io"></i></a>
-    </div>
-  </div>
-
-          <div class="card">
-<img src="https://raw.githubusercontent.com/vyomdwivedi/robo-nexus-website/67f9be355a4054996f76a9301945a3c887209adf/src/assets/images/unnamed.png" alt="Profile Image" class="profile-img" />
-    <h2>Atharv Mandlavdiya</h2>
-    <p class="role">President</p>
-
-    <div class="social-icons">
-    <a href="https://github.com/AtharvM02222" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/atharvmandlavdiya/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://atharvmandlavdiya.me" target="_blank"><i class="fas fa-globe"></i></a>
-    <a href="https://www.hackerrank.com/profile/Atharv0M" target="_blank"><i class="fab fa-hackerrank"></i></a>
-    <a href="https://g.dev/atharvmandlavdiya" target="_blank"><i class="fas fa-code"></i></a>
-    <a href="https://itch.io/profile/atharvam" target="_blank"><i class="fab fa-itch-io"></i></a>
-    </div>
-  </div>
-
-          <div class="card">
-<img src="https://raw.githubusercontent.com/vyomdwivedi/robo-nexus-website/67f9be355a4054996f76a9301945a3c887209adf/src/assets/images/unnamed.png" alt="Profile Image" class="profile-img" />
-    <h2>Atharv Mandlavdiya</h2>
-    <p class="role">President</p>
-
-    <div class="social-icons">
-    <a href="https://github.com/AtharvM02222" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/atharvmandlavdiya/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://atharvmandlavdiya.me" target="_blank"><i class="fas fa-globe"></i></a>
-    <a href="https://www.hackerrank.com/profile/Atharv0M" target="_blank"><i class="fab fa-hackerrank"></i></a>
-    <a href="https://g.dev/atharvmandlavdiya" target="_blank"><i class="fas fa-code"></i></a>
-    <a href="https://itch.io/profile/atharvam" target="_blank"><i class="fab fa-itch-io"></i></a>
-    </div>
-  </div>
-
-          <div class="card">
-<img src="https://raw.githubusercontent.com/vyomdwivedi/robo-nexus-website/67f9be355a4054996f76a9301945a3c887209adf/src/assets/images/unnamed.png" alt="Profile Image" class="profile-img" />
-    <h2>Atharv Mandlavdiya</h2>
-    <p class="role">President</p>
-
-    <div class="social-icons">
-    <a href="https://github.com/AtharvM02222" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/atharvmandlavdiya/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://atharvmandlavdiya.me" target="_blank"><i class="fas fa-globe"></i></a>
-    <a href="https://www.hackerrank.com/profile/Atharv0M" target="_blank"><i class="fab fa-hackerrank"></i></a>
-    <a href="https://g.dev/atharvmandlavdiya" target="_blank"><i class="fas fa-code"></i></a>
-    <a href="https://itch.io/profile/atharvam" target="_blank"><i class="fab fa-itch-io"></i></a>
-    </div>
-  </div>
-
-          <div class="card">
-<img src="https://raw.githubusercontent.com/vyomdwivedi/robo-nexus-website/67f9be355a4054996f76a9301945a3c887209adf/src/assets/images/unnamed.png" alt="Profile Image" class="profile-img" />
-    <h2>Atharv Mandlavdiya</h2>
-    <p class="role">President</p>
-
-    <div class="social-icons">
-    <a href="https://github.com/AtharvM02222" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/atharvmandlavdiya/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://atharvmandlavdiya.me" target="_blank"><i class="fas fa-globe"></i></a>
-    <a href="https://www.hackerrank.com/profile/Atharv0M" target="_blank"><i class="fab fa-hackerrank"></i></a>
-    <a href="https://g.dev/atharvmandlavdiya" target="_blank"><i class="fas fa-code"></i></a>
-    <a href="https://itch.io/profile/atharvam" target="_blank"><i class="fab fa-itch-io"></i></a>
-    </div>
-  </div>
-
-          <div class="card">
-<img src="https://raw.githubusercontent.com/vyomdwivedi/robo-nexus-website/67f9be355a4054996f76a9301945a3c887209adf/src/assets/images/unnamed.png" alt="Profile Image" class="profile-img" />
-    <h2>Atharv Mandlavdiya</h2>
-    <p class="role">President</p>
-
-    <div class="social-icons">
-    <a href="https://github.com/AtharvM02222" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/atharvmandlavdiya/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://atharvmandlavdiya.me" target="_blank"><i class="fas fa-globe"></i></a>
-    <a href="https://www.hackerrank.com/profile/Atharv0M" target="_blank"><i class="fab fa-hackerrank"></i></a>
-    <a href="https://g.dev/atharvmandlavdiya" target="_blank"><i class="fas fa-code"></i></a>
-    <a href="https://itch.io/profile/atharvam" target="_blank"><i class="fab fa-itch-io"></i></a>
-    </div>
-  </div>
-
-          <div class="card">
-<img src="https://raw.githubusercontent.com/vyomdwivedi/robo-nexus-website/67f9be355a4054996f76a9301945a3c887209adf/src/assets/images/unnamed.png" alt="Profile Image" class="profile-img" />
-    <h2>Atharv Mandlavdiya</h2>
-    <p class="role">President</p>
-
-    <div class="social-icons">
-    <a href="https://github.com/AtharvM02222" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/atharvmandlavdiya/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://atharvmandlavdiya.me" target="_blank"><i class="fas fa-globe"></i></a>
-    <a href="https://www.hackerrank.com/profile/Atharv0M" target="_blank"><i class="fab fa-hackerrank"></i></a>
-    <a href="https://g.dev/atharvmandlavdiya" target="_blank"><i class="fas fa-code"></i></a>
-    <a href="https://itch.io/profile/atharvam" target="_blank"><i class="fab fa-itch-io"></i></a>
-    </div>
-  </div>
-
-          <div class="card">
-<img src="https://raw.githubusercontent.com/vyomdwivedi/robo-nexus-website/67f9be355a4054996f76a9301945a3c887209adf/src/assets/images/unnamed.png" alt="Profile Image" class="profile-img" />
-    <h2>Atharv Mandlavdiya</h2>
-    <p class="role">President</p>
-
-    <div class="social-icons">
-    <a href="https://github.com/AtharvM02222" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/atharvmandlavdiya/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://atharvmandlavdiya.me" target="_blank"><i class="fas fa-globe"></i></a>
-    <a href="https://www.hackerrank.com/profile/Atharv0M" target="_blank"><i class="fab fa-hackerrank"></i></a>
-    <a href="https://g.dev/atharvmandlavdiya" target="_blank"><i class="fas fa-code"></i></a>
-    <a href="https://itch.io/profile/atharvam" target="_blank"><i class="fab fa-itch-io"></i></a>
-    </div>
-  </div>
-
-          <div class="card">
-<img src="https://raw.githubusercontent.com/vyomdwivedi/robo-nexus-website/67f9be355a4054996f76a9301945a3c887209adf/src/assets/images/unnamed.png" alt="Profile Image" class="profile-img" />
-    <h2>Atharv Mandlavdiya</h2>
-    <p class="role">President</p>
-
-    <div class="social-icons">
-    <a href="https://github.com/AtharvM02222" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/atharvmandlavdiya/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://atharvmandlavdiya.me" target="_blank"><i class="fas fa-globe"></i></a>
-    <a href="https://www.hackerrank.com/profile/Atharv0M" target="_blank"><i class="fab fa-hackerrank"></i></a>
-    <a href="https://g.dev/atharvmandlavdiya" target="_blank"><i class="fas fa-code"></i></a>
-    <a href="https://itch.io/profile/atharvam" target="_blank"><i class="fab fa-itch-io"></i></a>
-    </div>
-  </div>
-
-          <div class="card">
-<img src="https://raw.githubusercontent.com/vyomdwivedi/robo-nexus-website/67f9be355a4054996f76a9301945a3c887209adf/src/assets/images/unnamed.png" alt="Profile Image" class="profile-img" />
-    <h2>Atharv Mandlavdiya</h2>
-    <p class="role">President</p>
-
-    <div class="social-icons">
-    <a href="https://github.com/AtharvM02222" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/atharvmandlavdiya/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://atharvmandlavdiya.me" target="_blank"><i class="fas fa-globe"></i></a>
-    <a href="https://www.hackerrank.com/profile/Atharv0M" target="_blank"><i class="fab fa-hackerrank"></i></a>
-    <a href="https://g.dev/atharvmandlavdiya" target="_blank"><i class="fas fa-code"></i></a>
-    <a href="https://itch.io/profile/atharvam" target="_blank"><i class="fab fa-itch-io"></i></a>
-    </div>
-  </div>
-
-          <div class="card">
-<img src="https://raw.githubusercontent.com/vyomdwivedi/robo-nexus-website/67f9be355a4054996f76a9301945a3c887209adf/src/assets/images/unnamed.png" alt="Profile Image" class="profile-img" />
-    <h2>Atharv Mandlavdiya</h2>
-    <p class="role">President</p>
-
-    <div class="social-icons">
-    <a href="https://github.com/AtharvM02222" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/atharvmandlavdiya/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://atharvmandlavdiya.me" target="_blank"><i class="fas fa-globe"></i></a>
-    <a href="https://www.hackerrank.com/profile/Atharv0M" target="_blank"><i class="fab fa-hackerrank"></i></a>
-    <a href="https://g.dev/atharvmandlavdiya" target="_blank"><i class="fas fa-code"></i></a>
-    <a href="https://itch.io/profile/atharvam" target="_blank"><i class="fab fa-itch-io"></i></a>
-    </div>
-  </div>
-
-    
 </center>
-                <footer class="footer">
-                <p>&copy; 2025 Robo Nexus. All rights reserved.</p>
-            </footer>
-    </body>
+
+</body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
