@@ -1,187 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        />
-        <link rel="stylesheet" href="../css/style.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-        <title>Robo Nexus</title>
-        <style>
-            /* Team Grid Layout */
-            .team-container {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-                gap: 2rem;
-                padding: 3rem 2rem;
-                max-width: 1400px;
-                margin: 0 auto;
-            }
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-            /* Responsive breakpoints for different screen sizes */
-            @media (max-width: 1200px) {
-                .team-container {
-                    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-                    gap: 1.5rem;
-                    padding: 2.5rem 1.5rem;
-                }
-            }
+    <title>Our Team | Robo Nexus</title>
 
-            @media (max-width: 768px) {
-                .team-container {
-                    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-                    gap: 1.5rem;
-                    padding: 2rem 1rem;
-                }
-            }
+    <!-- Font Awesome (ONLY ONE) -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
 
-            @media (max-width: 480px) {
-                .team-container {
-                    grid-template-columns: 1fr;
-                    padding: 1.5rem 1rem;
-                }
-            }
-        </style>
-    </head>
-    <body>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-        <script src="../js/script.js"></script>
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
 
-        <div class="container">
-            <nav class="navbar">
-                <div class="navbar-content">
-                    <div class="nav-logo">
-                        <a href="../../index.html">
-                            <img
-                                src="../assets/images/Robo_Nexus_Logo.png"
-                                class="nav-logo"
-                                alt="Logo"
-                            />
-                        </a>
-                    </div>
-                    <ul class="nav-links-ul">
-                        <li>
-                            <a class="nav-links" href="about.html">About Us</a>
-                        </li>
-                        <li class="separator">|</li>
-                        <li><a class="nav-links" href="team.html">Team</a></li>
-                        <li class="separator">|</li>
-                        <li>
-                            <a class="nav-links" href="events.html">Events</a>
-                        </li>
-                        <li class="separator">|</li>
-                        <li>
-                            <a class="nav-links" href="contact.html">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+<body>
 
-            <div class="team-container">
-                <div class="card">
-                    <img src="https://raw.githubusercontent.com/vyomdwivedi/robo-nexus-website/67f9be355a4054996f76a9301945a3c887209adf/src/assets/images/unnamed.png" alt="Profile Image" class="profile-img" />
-                    <h2>Atharv Mandlavdiya</h2>
-                    <p class="role">President</p>
-                    <div class="social-icons">
-                        <a href="https://github.com/AtharvM02222" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/atharvmandlavdiya/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://atharvmandlavdiya.me" target="_blank"><i class="fas fa-globe"></i></a>
-                        <a href="https://www.hackerrank.com/profile/Atharv0M" target="_blank"><i class="fab fa-hackerrank"></i></a>
-                        <a href="https://g.dev/atharvmandlavdiya" target="_blank"><i class="fas fa-code"></i></a>
-                        <a href="https://itch.io/profile/atharvam" target="_blank"><i class="fab fa-itch-io"></i></a>
-                    </div>
+    <!-- Page Wrapper (for transitions) -->
+    <div class="page-transition">
+
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="navbar-content">
+                <div class="nav-logo">
+                    <a href="../../index.html">
+                        <img
+                            src="../assets/images/Robo_Nexus_Logo.png"
+                            alt="Robo Nexus Logo"
+                        />
+                    </a>
                 </div>
 
-                <!-- Add more team members by copying the card div below -->
-                <div class="card">
-                    <img src="https://raw.githubusercontent.com/vyomdwivedi/robo-nexus-website/67f9be355a4054996f76a9301945a3c887209adf/src/assets/images/unnamed.png" alt="Profile Image" class="profile-img" />
-                    <h2>Member Name</h2>
-                    <p class="role">Position</p>
-                    <div class="social-icons">
-                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="https://raw.githubusercontent.com/vyomdwivedi/robo-nexus-website/67f9be355a4054996f76a9301945a3c887209adf/src/assets/images/unnamed.png" alt="Profile Image" class="profile-img" />
-                    <h2>Member Name</h2>
-                    <p class="role">Position</p>
-                    <div class="social-icons">
-                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
-                    </div>
-                </div>
-
-                                <div class="card">
-                    <img src="https://raw.githubusercontent.com/vyomdwivedi/robo-nexus-website/67f9be355a4054996f76a9301945a3c887209adf/src/assets/images/unnamed.png" alt="Profile Image" class="profile-img" />
-                    <h2>Member Name</h2>
-                    <p class="role">Position</p>
-                    <div class="social-icons">
-                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
-                    </div>
-                </div>
-
-                                <div class="card">
-                    <img src="https://raw.githubusercontent.com/vyomdwivedi/robo-nexus-website/67f9be355a4054996f76a9301945a3c887209adf/src/assets/images/unnamed.png" alt="Profile Image" class="profile-img" />
-                    <h2>Member Name</h2>
-                    <p class="role">Position</p>
-                    <div class="social-icons">
-                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
-                    </div>
-                </div>
-
-                                <div class="card">
-                    <img src="https://raw.githubusercontent.com/vyomdwivedi/robo-nexus-website/67f9be355a4054996f76a9301945a3c887209adf/src/assets/images/unnamed.png" alt="Profile Image" class="profile-img" />
-                    <h2>Member Name</h2>
-                    <p class="role">Position</p>
-                    <div class="social-icons">
-                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
-                    </div>
-                </div>
-
-                                <div class="card">
-                    <img src="https://raw.githubusercontent.com/vyomdwivedi/robo-nexus-website/67f9be355a4054996f76a9301945a3c887209adf/src/assets/images/unnamed.png" alt="Profile Image" class="profile-img" />
-                    <h2>Member Name</h2>
-                    <p class="role">Position</p>
-                    <div class="social-icons">
-                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
-                    </div>
-                </div>
-
-                                <div class="card">
-                    <img src="https://raw.githubusercontent.com/vyomdwivedi/robo-nexus-website/67f9be355a4054996f76a9301945a3c887209adf/src/assets/images/unnamed.png" alt="Profile Image" class="profile-img" />
-                    <h2>Member Name</h2>
-                    <p class="role">Position</p>
-                    <div class="social-icons">
-                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
-                    </div>
-                </div>
-
+                <ul class="nav-links-ul">
+                    <li><a class="nav-links" href="about.html">About Us</a></li>
+                    <li class="separator">|</li>
+                    <li><a class="nav-links active" href="team.html">Team</a></li>
+                    <li class="separator">|</li>
+                    <li><a class="nav-links" href="events.html">Events</a></li>
+                    <li class="separator">|</li>
+                    <li><a class="nav-links" href="contact.html">Contact Us</a></li>
+                </ul>
             </div>
+        </nav>
 
-            <footer class="footer">
-                <p>&copy; 2025 Robo Nexus. All rights reserved.</p>
-            </footer>
-        </div>
-    </body>
+        <!-- Team Section -->
+        <section class="team-section">
+            <h1 class="section-title reveal">Our Team</h1>
+
+            <!-- Cards injected by JS -->
+            <div class="team-container" id="team-container"></div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2025 Robo Nexus. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <!-- Main Script -->
+    <script src="../js/script.js"></script>
+
+</body>
 </html>
-
-
-
