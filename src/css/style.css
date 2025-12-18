@@ -411,6 +411,25 @@ input, textarea{
   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
 }
 
+/* SMOOTH TRANSITIONS */
+.card,
+.nav-links,
+.socials i {
+  transition: all 0.3s ease;
+}
+
+/* SOCIAL ICON HOVER */
+.socials i:hover {
+  transform: translateY(-6px) scale(1.1);
+}
+
+/* TEAM CARD HOVER */
+.card:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 0 30px rgba(2, 202, 220, 0.35);
+}
+
+
 .profile-img {
   width: 100%;
   height: auto;
@@ -439,3 +458,4 @@ h2 {
 .social-icons a:hover {
   color: #00ff7f;
 }
+
