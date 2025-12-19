@@ -2,13 +2,13 @@
   {
     "name": "~Aryaman Yadav~",
     "role": "President",
-    "image": "/assets/images/ARAY.jpg",
+    "image": "/assets/images/ARAY.jpeg",
     "links": {}
   },
   {
     "name": "Akshar Yadav",
     "role": "Vice President",
-    "image": "/assets/images/AKSY.jpg",
+    "image": "/assets/images/AKSY.jpeg",
     "links": {
       "linkedin": "https://www.linkedin.com/in/aksharyadav26/"
     }
@@ -26,7 +26,7 @@
   {
     "name": "Avani Yadav",
     "role": "Core Member",
-    "image": "/assets/images/AVAY.jpg",
+    "image": "/assets/images/AVAY.jpeg",
     "links": {}
   },
   {
