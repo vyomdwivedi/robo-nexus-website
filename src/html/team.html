@@ -1,71 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Our Team | Robo Nexus</title>
+  <title>Our Team | Robo Nexus</title>
 
-    <!-- Font Awesome (ONLY ONE) -->
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
 
-    <!-- Main Styles -->
-    <link rel="stylesheet" href="../css/style.css" />
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="../css/style.css" />
 </head>
 
 <body>
 
-    <!-- Page Wrapper (for transitions) -->
-    <div class="page-transition">
+  <!-- PAGE TRANSITION OVERLAY (IMPORTANT) -->
+  <div class="page-transition"></div>
 
-        <!-- Navbar -->
-        <nav class="navbar">
-            <div class="navbar-content">
-                <div class="nav-logo">
-                    <a href="../../index.html">
-                        <img
-                            src="../assets/images/Robo_Nexus_Logo.png"
-                            alt="Robo Nexus Logo"
-                        />
-                    </a>
-                </div>
+  <!-- PAGE CONTENT -->
+  <div class="page-content">
 
-                <ul class="nav-links-ul">
-                    <li><a class="nav-links" href="about.html">About Us</a></li>
-                    <li class="separator">|</li>
-                    <li><a class="nav-links active" href="team.html">Team</a></li>
-                    <li class="separator">|</li>
-                    <li><a class="nav-links" href="events.html">Events</a></li>
-                    <li class="separator">|</li>
-                    <li><a class="nav-links" href="contact.html">Contact Us</a></li>
-                </ul>
-            </div>
-        </nav>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-content">
+        <div class="nav-logo">
+          <a href="../../index.html">
+            <img
+              src="../assets/images/Robo_Nexus_Logo.png"
+              alt="Robo Nexus Logo"
+            />
+          </a>
+        </div>
 
-        <!-- Team Section -->
-        <section class="team-section">
-            <h1 class="section-title reveal">Our Team</h1>
+        <ul class="nav-links-ul">
+          <li><a class="nav-links" href="about.html">About Us</a></li>
+          <li class="separator">|</li>
+          <li><a class="nav-links active" href="team.html">Team</a></li>
+          <li class="separator">|</li>
+          <li><a class="nav-links" href="events.html">Events</a></li>
+          <li class="separator">|</li>
+          <li><a class="nav-links" href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
 
-            <!-- Cards injected by JS -->
-            <div class="team-container" id="team-container"></div>
-        </section>
+    <center>
+      <div class="section-divider"></div>
+    </center>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <p>&copy; 2025 Robo Nexus. All rights reserved.</p>
-        </footer>
+    <!-- Team Section -->
+    <section class="team-section">
+            <center>
+                <h1 class="section-title reveal">Our Team</h1>
+            </center>
 
-    </div>
+      <!-- Cards injected by JS -->
+      <div class="team-container" id="team-container"></div>
+    </section>
 
-    <!-- GSAP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2025 Robo Nexus. All rights reserved.</p>
+    </footer>
 
-    <!-- Main Script -->
-    <script src="../js/script.js"></script>
+  </div>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Main Script -->
+  <script src="../js/script.js"></script>
 
 </body>
 </html>

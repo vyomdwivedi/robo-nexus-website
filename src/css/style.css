@@ -1,522 +1,147 @@
-*{
-    color: #ffffff;
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-.content{
-    background: #000000;
-}
-.container{
-    background: #000000
-}
-body{
-    background: #000000;
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
 }
 
-
-
-
-
-/* NAVBAR */
-.navbar-content{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background: #000000;
-    padding: 10px;
-}
-.nav-links-ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-}
-.nav-links{
-    color: #ffffff;
-    text-decoration: none;
-}
-.navbar ul li{
-    display: inline;
-    padding: 10px;
-}
-.navbar ul li a:hover{
-    color: #02cadc;
-}
-.nav-links, .nav-links-active{
-    background: #000000;
-    padding: 5px;
-    font-size: 25px;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-}
-.nav-logo{
-    width: 100px;
-    height: auto;
-}
-.nav-logo:hover{
-    cursor: pointer;
-}
-
-
-
-
-
-/* HOME PAGE */
-.hero-section{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background: #000000;
-}
-.home-text-main{
-    font-size: 200px;
-    font-weight: 900;
-    text-align: center;
-    letter-spacing: 7px;
-    color: #ffffff;
-    margin-bottom: -3vw;
-}
-.home-text-sub{
-    font-size: 175px;
-    font-weight: 900;
-    text-align: center;
-    letter-spacing: 7px;
-    color: #47a0b8;
-}
-.socials{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    height: auto;
-    width: auto;
-}
-.insta, .facebook, .github, .behance, .email{
-    width: 100%;
-    height: auto;
-    margin: 10px;
-    text-align: center;
-}
-.socials i{
-    font-size: 30px;
-    color: #ffffff;
-    padding: 10px;
-    margin-top: -20px;
-}
-.socials i:hover{
-    cursor: pointer;
-    color: #02cadc;
-    font-size: 25px;
-}
-
-
-
-
-
-/* ABOUT PAGE */
-.about-section{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background: #000000;
-}
-.about-details{
-    padding: 10px;
-    margin: 5vw 2vw 5vw 10vw;
-    font-size: 20px;
-    text-align: justify;
-}
-.about-heading{
-    font-size: 3vw;
-    font-weight: 900;
-    color: #ffffff;
-}
-.about-text-sub{
-    font-size: 1.75vw;
-    color: #47a0b8;
-    font-weight: 700;
-}
-.about-logo{
-    width: auto;
-    height: auto;
-    margin-right: 5vw;
-}
-
-
-
-
-
-/* CONTACT PAGE */
-.contact-section{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background: #000000;
-}
-.contact-text{
-    font-size: 3vw;
-    font-weight: 900;
-    color: #ffffff;
-    padding: 1vw;
-    text-align: center;
-}
-.contact-form-div{
-    background: #141414;
-    border-radius: 5px;
-}
-.contact-form{
-    padding: 2vw;
-    margin-right: 2vw;
-    text-align: left;
-    width: 25vw;
-}
-.contact-name, .contact-email, .contact-message, .contact-subject{
-    margin-bottom: 20px;
-}
-input, textarea{
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #6e6e6e;
-    border-radius: 5px;
-    resize: none;
-    background: #2c2c2c;
-}
-.contact-send-button{
-    padding: 1vw;
-    margin: 1vw;
-    font-size: 1vw;
-    font-weight: 700;
-    border: 2px solid #004e55;
-    border-radius: 5px;
-    background: #2c2c2c;
-    color: #00b9ca;
-}
-.contact-send-button:hover{
-    cursor: pointer;
-    color: #00b9ca;
-    background: #004e55;
-    border: 2px solid #000000;
-}
-.contact-info{
-    padding: 2vw;
-    margin-left: 2vw;
-    font-size: 20px;
-    top: 0;
-    text-align: justify;
-}
-.contact-info-text{
-    font-size: 2vw;
-    font-weight: 700;
-    color: #47a0b8;
-    text-align: center;
-}
-.contact-info-details{
-    color: #ffffff;
-    padding: 20px
-}
-.contact-info-details p i{
-    padding: 5px;
-}
-
-
-
-
-
-/* EVENTS PAGE */
-.events-text{
-    font-size: 3vw;
-    font-weight: 900;
-    color: #ffffff;
-    padding: 1vw;
-    text-align: center;
-}
-
-
-
-
-
-/* TEAM PAGE */
-.team-text{
-    font-size: 3vw;
-    font-weight: 900;
-    color: #ffffff;
-    padding: 1vw;
-    text-align: center;
-}
-.team-grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    padding: 20px;
-    padding-bottom: 5vw;
-}
-.team-member{
-    background-color: #2c2c2c;
-    border-radius: 10px;
-    padding: 1.5rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-.member-name{
-    font-size: 25px;
-    font-weight: 800;
-    color: #ffffff;
-}
-.member-post{
-    font-size: 20px;
-    color: #47a0b8;
-    font-weight: 700;
-}
-.member-socials{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    height: auto;
-    width: auto;
-}
-.member-socials i{
-    font-size: 30px;
-    color: #ffffff;
-    padding: 10px;
-    font-weight: normal;
-}
-.member-socials i:hover{
-    cursor: pointer;
-    color: #02cadc;
-    font-size: 25px;
-}
-
-
-
-
-
-/* FOOTER */
-.footer{
-    text-align: center;
-    background: #000000;
-    width: 100%;
-    height: auto;
-    font-weight: 800;
-    bottom: 0;
-    position: fixed;
-}
-.footer p{
-    padding: 10px;
-    font-size: 15px;
-    color: #ffffff;
-}
-
-
-
-
-
-/* RESPONSIVENESS */
-@media screen and (min-width: 875px) and (max-width: 1200px){
-    /* Home Page */
-    .hero-section{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: #000000;
-    }
-    /* About Page */
-
-    /* Team Page */
-    .team-grid{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    /* Events Page */
-
-    /* Conatact Page */
-}
-
-@media screen and (min-width: 10px) and (max-width: 875px){
-    /* Home Page */
-    .hero-section{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: #000000;
-    }
-    .home-text-main{
-        font-size: 100px;
-    }
-    .home-text-sub{
-        font-size: 75px;
-    }
-    /* About Page */
-
-    /* Team Page */
-    .team-grid{
-        grid-template-columns: repeat(1, 1fr);
-    }
-    /* Events Page */
-
-    /* Conatact Page */
-    .contact-form-div{
-        width: 100%;
-    }
-    .contact-form-div form{
-        width: 80%;
-        align-items: center;
-    }
-    .contact-section{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background: #000000;
-        padding-bottom: 75px;
-    }
-    .contact-send-button{
-        font-size: 15px;
-        font-weight: 700;
-        border: 2px solid #02cadc;
-        background: #000000;
-        color: #02cadc;
-    }
-    .contact-text{
-        font-size: 50px;
-    }
-    .contact-info-text{
-        font-size: 40px;
-    }
-}
-
-/*  */
-.card {
-  background-color: #111;
-  color: #fff;
-  width: 250px;
-  padding: 20px;
-  border-radius: 15px;
-  text-align: center;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
-}
-
-/* SMOOTH TRANSITIONS */
-.card,
-.nav-links,
-.socials i {
-  transition: all 0.3s ease;
-}
-
-/* SOCIAL ICON HOVER */
-.socials i:hover {
-  transform: translateY(-6px) scale(1.1);
-}
-
-/* TEAM CARD HOVER */
-.card:hover {
-  transform: translateY(-12px) scale(1.03);
-  box-shadow: 0 0 30px rgba(2, 202, 220, 0.35);
-}
-
-
-.profile-img {
+html, body {
   width: 100%;
-  height: auto;
-  border-radius: 10px;
+  height: 100%;
+  overflow-x: hidden;
 }
 
-h2 {
-  margin: 10px 0 5px;
-  font-size: 20px;
+body {
+  background: #000000;
 }
 
-.role {
-  color: #00ff7f;
-  margin-bottom: 15px;
-  font-weight: 500;
-}
-
-.social-icons a {
-  color: #bbb;
-  margin: 0 8px;
-  font-size: 18px;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
-  color: #00ff7f;
-}
-
-.team-container {
-  perspective: 1000px;
-}
-
-.team-card {
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 16px;
-  padding: 20px;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-  transform-style: preserve-3d;
-  will-change: transform;
-  position: relative;
-}
-
-/* Glow effect */
-.team-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 16px;
-  background: radial-gradient(
-    600px circle at var(--x, 50%) var(--y, 50%),
-    rgba(0, 255, 255, 0.25),
-    transparent 40%
-  );
-  opacity: 0;
-  transition: opacity 0.3s;
-  pointer-events: none;
-}
-
-.team-card:hover::before {
-  opacity: 1;
-}
-
-.card {
-  transform-style: preserve-3d;
-  transition: transform 0.15s ease;
-}
-
-.team-container {
-  perspective: 1000px;
-}
-
-
-
-#page-transition {
+/* =========================
+   PAGE TRANSITION (FIXED)
+========================= */
+.page-transition {
   position: fixed;
   inset: 0;
   background: #000;
   z-index: 9999;
-  pointer-events: none;
-  opacity: 0;
+  pointer-events: none;   /* 🔥 CRITICAL */
+  opacity: 1;
+}
+
+.page-content {
+  position: relative;
+  z-index: 1;
 }
 
 
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+  min-height: 70px;
+  padding: 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+}
+
+.nav-logo img {
+  height: 48px;
+  width: auto;
+  flex-shrink: 0;
+}
+
+.nav-links-ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.nav-links:hover,
+.nav-links.active {
+  color: #02cadc;
+}
+
+/* =========================
+   PAGE HEADINGS
+========================= */
+.about-heading,
+.team-text,
+.events-text,
+.contact-text {
+  text-align: center;
+  font-size: 3vw;
+  font-weight: 900;
+  padding: 2rem 0;
+}
+
+/* =========================
+   HOME (NO LAYOUT CHANGE)
+========================= */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-text-main {
+  font-size: 200px;
+  font-weight: 900;
+}
+
+.home-text-sub {
+  font-size: 175px;
+  font-weight: 900;
+  color: #47a0b8;
+}
+
+/* =========================
+   ABOUT
+========================= */
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5vw 10vw;
+}
+
+.about-details {
+  max-width: 700px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.about-text-sub {
+  color: #47a0b8;
+  font-weight: 700;
+}
+
+/* =========================
+   TEAM
+========================= */
 .team-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
 }
 
@@ -526,6 +151,7 @@ h2 {
   padding: 1.5rem;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform;
 }
 
 .team-card img {
@@ -535,11 +161,22 @@ h2 {
   border-radius: 10px;
 }
 
-.team-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0,255,255,0.15);
+.team-card h2 {
+  margin-top: 15px;
+  font-size: 22px;
 }
 
+.team-card p {
+  color: #47a0b8;
+  font-weight: 700;
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,255,255,0.2);
+}
+
+/* Team Social Icons */
 .social-links {
   margin-top: 1rem;
   display: flex;
@@ -548,6 +185,105 @@ h2 {
 }
 
 .social-links a {
-  color: #00ffff;
   font-size: 1.2rem;
+  color: #00ffff;
+  transition: transform 0.3s;
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+}
+
+/* =========================
+   CONTACT (NO REDESIGN)
+========================= */
+.contact-section {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding-bottom: 5rem;
+}
+
+.contact-form-div {
+  background: #141414;
+  border-radius: 6px;
+  padding: 2rem;
+  width: 350px;
+}
+
+input,
+textarea {
+  width: 100%;
+  background: #2c2c2c;
+  border: 1px solid #6e6e6e;
+  padding: 12px;
+  border-radius: 5px;
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #02cadc;
+}
+
+.contact-send-button {
+  margin-top: 1rem;
+  padding: 10px;
+  font-weight: bold;
+  background: #004e55;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-send-button:hover {
+  background: #02cadc;
+  color: #000;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 900px) {
+  .home-text-main {
+    font-size: 100px;
+  }
+
+  .home-text-sub {
+    font-size: 75px;
+  }
+
+  .about-section,
+  .contact-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* =========================
+   FADE UP (OPTIONAL)
+========================= */
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1s ease forwards;
+}
+
+.fade-delay-1 { animation-delay: 0.3s; }
+.fade-delay-2 { animation-delay: 0.6s; }
+.fade-delay-3 { animation-delay: 0.9s; }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
