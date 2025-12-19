@@ -2,19 +2,19 @@
   {
     "name": "~Aryaman Yadav~",
     "role": "President",
-    "image": "../assets/images/unnamed.png",
+    "image": "/assets/images/unnamed.png",
     "links": {}
   },
   {
     "name": "Akshar Yadav",
     "role": "Vice President",
-    "image": "../assets/images/unnamed.png",
+    "image": "/assets/images/unnamed.png",
     "links": {}
   },
   {
     "name": "Atharv Mandlavdiya",
     "role": "Core Member",
-    "image": "https://github.com/vyomdwivedi/robo-nexus-website/blob/33139c36b4b2def9b7ddd08f1f800efa045da1dd/src/assets/images/AM.png",
+    "image": "/assets/images/AM.png",
     "links": {
       "github": "https://github.com/AtharvM02222",
       "linkedin": "https://www.linkedin.com/in/atharvmandlavdiya/",
@@ -24,19 +24,19 @@
   {
     "name": "Avani Yadav",
     "role": "Core Member",
-    "image": "../assets/images/unnamed.png",
+    "image": "/assets/images/unnamed.png",
     "links": {}
   },
   {
     "name": "Daksh Yadav",
     "role": "Core Member",
-    "image": "../assets/images/unnamed.png",
+    "image": "/assets/images/unnamed.png",
     "links": {}
   },
   {
     "name": "Nipun Dhawan",
     "role": "Core Member",
-    "image": "../assets/images/unnamed.png",
+    "image": "/assets/images/unnamed.png",
     "links": {
       "linkedin": "https://www.linkedin.com/in/nipun-dhawan-03072009nd/"
     }
@@ -44,7 +44,7 @@
   {
     "name": "Vyom Dwivedi",
     "role": "Core Member",
-    "image": "../assets/images/VD.png",
+    "image": "/assets/images/VD.jpg",
     "links": {
       "github": "https://github.com/vyomdwivedi",
       "linkedin": "https://www.linkedin.com/in/vyom-dwivedi-coder99/",
@@ -54,7 +54,7 @@
   {
     "name": "Shubhan Bhasin",
     "role": "Core Member",
-    "image": "../assets/images/unnamed.png",
+    "image": "/assets/images/unnamed.png",
     "links": {
       "linkedin": "https://www.linkedin.com/in/shubhan-bhasin-887a621ba/"
     }
@@ -62,13 +62,13 @@
   {
     "name": "Naitik Sharma",
     "role": "Core Member",
-    "image": "../assets/images/unnamed.png",
+    "image": "/assets/images/unnamed.png",
     "links": {}
   },
   {
     "name": "Devanshu Roy",
     "role": "Member",
-    "image": "../assets/images/DY.png",
+    "image": "/assets/images/DY.jpeg",
     "links": {
       "github": "https://github.com/DevanshuRoy",
       "website": "https://devanshuroy.me/"
@@ -77,19 +77,19 @@
   {
     "name": "Kavish Baghla",
     "role": "Member",
-    "image": "../assets/images/unnamed.png",
+    "image": "/assets/images/unnamed.png",
     "links": {}
   },
   {
     "name": "Reyansh Gugnani",
     "role": "Member",
-    "image": "../assets/images/unnamed.png",
+    "image": "/assets/images/unnamed.png",
     "links": {}
   },
   {
     "name": "Aryan Chhabra",
     "role": "Member",
-    "image": "../assets/images/unnamed.png",
+    "image": "/assets/images/unnamed.png",
     "links": {}
   }
 ]
