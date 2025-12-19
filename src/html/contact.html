@@ -1,98 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us | Robo Nexus</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        />
+        <link rel="stylesheet" href="../css/style.css" />
+        <title>Robo Nexus</title>
+    </head>
 
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-  />
-  <link rel="stylesheet" href="../css/style.css" />
-</head>
-
-<body>
-
-  <!-- PAGE TRANSITION OVERLAY -->
-  <div class="page-transition"></div>
-
-  <!-- PAGE CONTENT -->
-  <div class="page-content">
-
-    <!-- NAVBAR -->
-    <nav class="navbar">
-      <div class="navbar-content">
-        <div class="nav-logo">
-          <a href="../../index.html">
-            <img src="../assets/images/Robo_Nexus_Logo.png" alt="Logo">
-          </a>
+    <body>
+        <div class="container">
+            <nav class="navbar">
+                <div class="navbar-content">
+                    <div class="nav-logo">
+                        <a href="../../index.html">
+                            <img
+                                src="../assets/images/Robo_Nexus_Logo.png"
+                                class="nav-logo"
+                                alt="Logo"
+                            />
+                        </a>
+                    </div>
+                    <ul class="nav-links-ul">
+                        <li>
+                            <a class="nav-links" href="about.html">About Us</a>
+                        </li>
+                        <li class="separator">|</li>
+                        <li><a class="nav-links" href="team.html">Team</a></li>
+                        <li class="separator">|</li>
+                        <li>
+                            <a class="nav-links" href="events.html">Events</a>
+                        </li>
+                        <li class="separator">|</li>
+                        <li>
+                            <a class="nav-links" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="content">
+                <div class="contact-text">Contact Us!</div>
+                <div class="contact-section" id="contact">
+                    <div class="contact-form-div">
+                        <form class="contact-form">
+                            <div class="form-row">
+                                <div class="contact-name">
+                                    <input
+                                        class="form-control"
+                                        type="text"
+                                        id="name"
+                                        placeholder="Your Name"
+                                    />
+                                </div>
+                                <div class="contact-email">
+                                    <input
+                                        class="form-control"
+                                        type="text"
+                                        id="email"
+                                        placeholder="Email Address"
+                                    />
+                                </div>
+                                <div class="contact-subject">
+                                    <input
+                                        class="form-control"
+                                        type="text"
+                                        id="subject"
+                                        placeholder="Subject"
+                                    />
+                                </div>
+                                <div class="contact-message">
+                                    <textarea
+                                        class="form-control"
+                                        id="message"
+                                        rows="6"
+                                        placeholder="Enter message here.."
+                                    ></textarea>
+                                </div>
+                                <button
+                                    type="button"
+                                    onclick="sendMail();"
+                                    class="contact-send-button"
+                                >
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-info-text">Contact Information</div>
+                        <div class="contact-info-details">
+                            <p><i class="fas fa-phone"></i> +91 XXXXXX6613</p>
+                            <p>
+                                <i class="fas fa-envelope"></i
+                                >robonexus.ais46@gmail.com
+                            </p>
+                            <p>
+                                <i class="fas fa-map-marker-alt"></i> Amity
+                                International School, Sector-46, Gurugram
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <p>&copy; 2025 Robo Nexus. All rights reserved.</p>
+            </footer>
         </div>
 
-        <ul class="nav-links-ul">
-          <li><a class="nav-links" href="about.html">About Us</a></li>
-          <li class="separator">|</li>
-          <li><a class="nav-links" href="team.html">Team</a></li>
-          <li class="separator">|</li>
-          <li><a class="nav-links" href="events.html">Events</a></li>
-          <li class="separator">|</li>
-          <li><a class="nav-links active" href="contact.html">Contact Us</a></li>
-        </ul>
-      </div>
-    </nav>
+        <script src="../js/contact.js"></script>
 
-    <!-- CONTACT SECTION -->
-    <section class="contact-section">
-      <div class="contact-form-div reveal">
-        <h2 class="contact-text">Contact Us!</h2>
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+        ></script>
 
-        <form class="contact-form">
-          <input type="text" id="name" placeholder="Your Name" />
-          <input type="email" id="email" placeholder="Email Address" />
-          <input type="text" id="subject" placeholder="Subject" />
-          <textarea id="message" rows="5" placeholder="Message"></textarea>
-
-          <button
-            type="button"
-            onclick="sendMail()"
-            class="contact-send-button"
-          >
-            Send Message
-          </button>
-        </form>
-      </div>
-
-      <div class="contact-info reveal">
-        <h3>Contact Information</h3>
-        <p><i class="fas fa-phone"></i> +91 XXXXXX6613</p>
-        <p><i class="fas fa-envelope"></i> robonexus.ais46@gmail.com</p>
-        <p>
-          <i class="fas fa-map-marker-alt"></i>
-          Amity International School, Sector-46, Gurugram
-        </p>
-      </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-      <p>&copy; 2025 Robo Nexus. All rights reserved.</p>
-    </footer>
-
-  </div>
-
-  <!-- GSAP -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-
-  <!-- MAIN SCRIPT -->
-  <script src="../js/script.js"></script>
-  <script src="../js/contact.js"></script>
-
-  <!-- EMAILJS -->
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <script>
-    emailjs.init("LhPol6L9HRAPF2BC8");
-  </script>
-
-</body>
+        <script type="text/javascript">
+            (function () {
+                emailjs.init("LhPol6L9HRAPF2BC8");
+            })();
+        </script>
+    </body>
 </html>
+
+
