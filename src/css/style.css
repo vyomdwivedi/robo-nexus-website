@@ -287,3 +287,7 @@ textarea:focus {
     transform: translateY(0);
   }
 }
+
+.social-links a:hover .fa-discord {
+  color: #5865F2; /* Discord brand color */
+}

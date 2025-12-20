@@ -120,6 +120,7 @@ if (teamContainer) {
             ${member.links.github ? `<a href="${member.links.github}" target="_blank"><i class="fab fa-github"></i></a>` : ""}
             ${member.links.linkedin ? `<a href="${member.links.linkedin}" target="_blank"><i class="fab fa-linkedin"></i></a>` : ""}
             ${member.links.website ? `<a href="${member.links.website}" target="_blank"><i class="fas fa-globe"></i></a>` : ""}
+            ${member.links.discord ? `<a href="${member.links.discord}" target="_blank"><i class="fab fa-discord"></i></a>` : ""}
           </div>
         </div>
       `).join("");
