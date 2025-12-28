@@ -120,18 +120,20 @@ body {
   padding-left: 11px;
 }
 
-.socials a {
-  font-size: 22px;
-  transition: transform 0.3s ease;
-}
-
-.socials a:hover {
-  transform: scale(1.2);
-}
-
 .socials a i {
-  vertical-align: middle;
-  line-height: 1;
+  font-size: 1.8rem;
+  transition: color 0.3s;
+}
+
+/* FA SHAKE ON HOVER */
+.socials a:hover i {
+  animation: fa-shake 0.8s infinite;
+}
+
+/* Optional: slow & smooth */
+.socials a:hover i {
+  --fa-animation-duration: 0.8s;
+  --fa-animation-iteration-count: infinite;
 }
 
 .home-logo {
