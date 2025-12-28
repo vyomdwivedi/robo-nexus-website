@@ -126,7 +126,7 @@ body {
 }
 
 .socials a:hover i {
-  animation: fa-shake 1s infinite;
+  animation: fa-beat 1s infinite;
 }
 
 /* Optional: slow & smooth */
