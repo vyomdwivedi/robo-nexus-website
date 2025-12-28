@@ -125,14 +125,13 @@ body {
   transition: color 0.3s;
 }
 
-/* FA SHAKE ON HOVER */
 .socials a:hover i {
-  animation: fa-shake 0.8s infinite;
+  animation: fa-shake 1s infinite;
 }
 
 /* Optional: slow & smooth */
 .socials a:hover i {
-  --fa-animation-duration: 0.8s;
+  --fa-animation-duration: 1s;
   --fa-animation-iteration-count: infinite;
 }
 
