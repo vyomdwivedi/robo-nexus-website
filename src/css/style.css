@@ -122,7 +122,8 @@ body {
 
 .socials a i {
   font-size: 1.8rem;
-  transition: color 0.3s;
+  transition: color 0.3s, transform 0.3s ease;
+  animation-fill-mode: both;
 }
 
 .socials a:hover i {
