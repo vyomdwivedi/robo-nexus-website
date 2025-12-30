@@ -127,6 +127,7 @@ body {
 
 .socials a:hover i {
   animation: fa-beat 1s infinite;
+  color: #47a0b8;
 }
 
 /* Optional: slow & smooth */
