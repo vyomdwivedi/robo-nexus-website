@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Aryaman Yadav",
+    "role": "Founding President",
+    "batch": "2024-25",
+    "image": "assets/images/ARAY.jpeg",
+    "contribution": "Founded Robo Nexus and led the team to multiple achievements",
+    "upcoming": true,
+    "links": {}
+  },
+  {
+    "name": "Akshar Yadav",
+    "role": "Vice President",
+    "batch": "2024-25",
+    "image": "assets/images/AKSY.jpg",
+    "contribution": "Helped shape the vision and growth of Robo Nexus",
+    "upcoming": true,
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/aksharyadav26/"
+    }
+  }
+]

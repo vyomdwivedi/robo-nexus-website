@@ -3,92 +3,119 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Robo Nexus</title>
+    <title>Robo Nexus | Robotics Club</title>
+
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="Robo Nexus - The official robotics club of Amity International School, Sector-46, Gurugram. Inspiring innovation through robotics and technology.">
+    <meta name="keywords" content="robotics, club, school, technology, innovation, arduino, programming">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Robo Nexus - Robotics Club">
+    <meta property="og:description" content="Inspiring innovation through robotics and technology">
+    <meta property="og:image" content="src/assets/images/Robo_Nexus_Logo.png">
+    <meta property="og:type" content="website">
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="src/css/style.css" />
 
-<!-- Favicon -->
-<link rel="apple-touch-icon" sizes="180x180" href="src/assets/images/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="src/assets/images/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="src/assets/images/favicon-16x16.png">
-<link rel="manifest" href="src/assets/images/site.webmanifest">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="src/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="src/assets/images/favicon-16x16.png">
+    <link rel="manifest" href="src/assets/images/site.webmanifest">
 
-    <!-- Font Awesome v6 ONLY -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   </head>
 
   <body>
-    <!-- NAVBAR -->
-    <nav class="navbar">
-      <div class="navbar-content">
-        <div class="nav-logo">
-          <a href="index.html">
-            <img src="src/assets/images/Robo_Nexus_Logo.png" alt="Robo Nexus Logo" />
-          </a>
-        </div>
+    <!-- PARTICLE BACKGROUND -->
+    <canvas id="particle-canvas"></canvas>
 
-        <ul class="nav-links-ul">
-          <li><a class="nav-links" href="src/html/about.html">About Us</a></li>
-          <li class="separator">|</li>
-          <li><a class="nav-links" href="src/html/team.html">Team</a></li>
-          <li class="separator">|</li>
-          <li><a class="nav-links" href="src/html/events.html">Events</a></li>
-          <li class="separator">|</li>
-          <li><a class="nav-links" href="src/html/contact.html">Contact Us</a></li>
-        </ul>
-      </div>
-    </nav>
+    <!-- PAGE TRANSITION -->
+    <div class="page-transition"></div>
 
-    <!-- HERO SECTION -->
-    <section class="hero-section">
-      <div class="hero-layout">
-        <div class="home-text">
-          <div class="home-text-main animate-hero">Robo</div>
-          <div class="home-text-sub animate-hero-delay">Nexus</div>
-
-          <div class="socials animate-hero-delay-2">
-            <a href="https://www.instagram.com/robonexus/">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://www.facebook.com/robonexus/">
-              <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a href="https://www.github.com/robonexus">
-              <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="mailto:roboticsclubaisg46@gmail.com">
-              <i class="fa-solid fa-envelope"></i>
-            </a>
-            <a href="https://www.behance.net">
-              <i class="fa-brands fa-behance"></i>
+    <!-- PAGE CONTENT -->
+    <div class="page-content">
+      <!-- NAVBAR -->
+      <nav class="navbar">
+        <div class="navbar-content">
+          <div class="nav-logo">
+            <a href="index.html">
+              <img src="src/assets/images/Robo_Nexus_Logo.png" alt="Robo Nexus Logo" />
             </a>
           </div>
+
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <ul class="nav-links-ul">
+            <li><a class="nav-links" href="src/html/about.html">About Us</a></li>
+            <li class="separator">|</li>
+            <li><a class="nav-links" href="src/html/team.html">Team</a></li>
+            <li class="separator">|</li>
+            <li><a class="nav-links" href="src/html/projects.html">Projects</a></li>
+            <li class="separator">|</li>
+            <li><a class="nav-links" href="src/html/achievements.html">Achievements</a></li>
+            <li class="separator">|</li>
+            <li><a class="nav-links" href="src/html/events.html">Events</a></li>
+            <li class="separator">|</li>
+            <li><a class="nav-links" href="src/html/contact.html">Contact Us</a></li>
+          </ul>
         </div>
+      </nav>
 
-        <div class="home-logo animate-hero-delay-3">
-          <img
-            src="src/assets/images/Robo_Nexus_Logo.png"
-            alt="Robo Nexus Robot"
-            class="home-logo-img"
-          />
+      <!-- HERO SECTION -->
+      <section class="hero-section">
+        <div class="hero-layout">
+          <div class="home-text">
+            <div class="home-text-main">Robo</div>
+            <div class="home-text-sub">Nexus</div>
+
+            <div class="socials">
+              <a href="https://www.instagram.com/robonexus/" target="_blank" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://www.facebook.com/robonexus/" target="_blank" aria-label="Facebook">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="https://www.github.com/robonexus" target="_blank" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="mailto:roboticsclubaisg46@gmail.com" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/robonexus" target="_blank" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="home-logo">
+            <img
+              src="src/assets/images/Robo_Nexus_Logo.png"
+              alt="Robo Nexus Robot"
+              class="home-logo-img"
+            />
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-      <p>&copy; @2025 Robo Nexus. All rights reserved.</p>
-    </footer>
+      <!-- FOOTER -->
+      <footer class="footer">
+        <p>&copy; 2026 Robo Nexus. All rights reserved.</p>
+      </footer>
+    </div>
 
-    <!-- GSAP (safe to keep) -->
+    <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
-    <!-- MAIN SCRIPT -->
+    <!-- SCRIPTS -->
+    <script src="src/js/particles.js"></script>
     <script src="src/js/script.js"></script>
   </body>
 </html>
