@@ -1,0 +1,34 @@
+{
+  "_FORMAT_GUIDE": {
+    "upcomingEvents": {
+      "id": "Unique number (1, 2, 3...)",
+      "title": "Event name",
+      "date": "YYYY-MM-DD format",
+      "time": "Start - End time",
+      "location": "Venue name",
+      "description": "Event description",
+      "type": "workshop / competition / bootcamp",
+      "registrationOpen": "true or false",
+      "spots": "Total spots available",
+      "spotsLeft": "Remaining spots"
+    },
+    "pastEvents": {
+      "title": "Event name",
+      "date": "YYYY-MM-DD format",
+      "description": "Event description",
+      "images": ["Array of image paths"],
+      "highlights": ["Array of highlights"]
+    }
+  },
+  "upcomingEvents": [
+  ],
+  "pastEvents": [
+    {
+      "title": "Club Inauguration",
+      "date": "",
+      "description": "Official launch of Robo Nexus with founding members.",
+      "images": ["../assets/images/Robo_Nexus_Logo.png"],
+      "highlights": ["15+ members joined till now", "First project announced", "Team formation"]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "_FORMAT_GUIDE": {
+    "name": "Alumni's full name",
+    "role": "Their role when they were in the club",
+    "batch": "Year range (e.g., 2024-25)",
+    "image": "Image path (assets/images/filename.jpg)",
+    "contribution": "Brief description of their contribution (optional)",
+    "upcoming": "true (for members who will join alumni soon) or remove this field",
+    "links": {
+      "github": "GitHub profile URL (optional)",
+      "linkedin": "LinkedIn profile URL (optional)",
+      "website": "Personal website URL (optional)"
+    }
+  },
+  "alumni": [
+    {
+      "name": "Aryaman Yadav",
+      "role": "Founding President",
+      "batch": "2024-25",
+      "image": "assets/images/ARAY.jpeg",
+      "contribution": "Founded Robo Nexus and led the team to multiple achievements",
+      "upcoming": true,
+      "links": {}
+    },
+    {
+      "name": "Akshar Yadav",
+      "role": "Vice President",
+      "batch": "2024-25",
+      "image": "assets/images/AKSY.jpg",
+      "contribution": "Helped shape the vision and growth of Robo Nexus",
+      "upcoming": true,
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/aksharyadav26/"
+      }
+    }
+  ]
+}
