@@ -21,23 +21,11 @@
     }
   },
   "upcomingEvents": [
-    {
-      "id": 1,
-      "title": "Robotics Workshop 2026",
-      "date": "2026-02-15",
-      "time": "10:00 AM - 4:00 PM",
-      "location": "School Auditorium",
-      "description": "Hands-on workshop covering Arduino basics and building your first robot.",
-      "type": "workshop",
-      "registrationOpen": true,
-      "spots": 30,
-      "spotsLeft": 20
-    }
   ],
   "pastEvents": [
     {
       "title": "Club Inauguration",
-      "date": "2024-08-15",
+      "date": "",
       "description": "Official launch of Robo Nexus with founding members.",
       "images": ["../assets/images/Robo_Nexus_Logo.png"],
       "highlights": ["15+ members joined till now", "First project announced", "Team formation"]
