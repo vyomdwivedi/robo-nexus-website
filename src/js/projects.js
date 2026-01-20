@@ -1,49 +1,115 @@
-// Tutorials Data - Fetched from JSON
-let tutorials = [];
+// Projects Data
+const projects = [
+  {
+    id: 1,
+    title: "Autonomous Line Follower",
+    category: "robots",
+    image: "../assets/images/project-placeholder.jpg",
+    description: "A smart robot that follows lines using IR sensors with PID control for smooth navigation.",
+    tech: ["Arduino", "IR Sensors", "Motor Driver"],
+    status: "Completed",
+    year: "2024"
+  },
+  {
+    id: 2,
+    title: "Smart Home Automation",
+    category: "iot",
+    image: "../assets/images/project-placeholder.jpg",
+    description: "IoT-based home automation system controllable via mobile app and voice commands.",
+    tech: ["ESP32", "Firebase", "Flutter"],
+    status: "Completed",
+    year: "2024"
+  },
+  {
+    id: 3,
+    title: "Gesture Controlled Robot",
+    category: "robots",
+    image: "../assets/images/project-placeholder.jpg",
+    description: "Robot controlled by hand gestures using accelerometer and wireless communication.",
+    tech: ["Arduino", "MPU6050", "NRF24L01"],
+    status: "Completed",
+    year: "2024"
+  },
+  {
+    id: 4,
+    title: "Object Detection Drone",
+    category: "drones",
+    image: "../assets/images/project-placeholder.jpg",
+    description: "Quadcopter with real-time object detection using computer vision.",
+    tech: ["Raspberry Pi", "OpenCV", "Python"],
+    status: "In Progress",
+    year: "2025"
+  },
+  {
+    id: 5,
+    title: "AI Chatbot Assistant",
+    category: "ai",
+    image: "../assets/images/project-placeholder.jpg",
+    description: "Custom trained chatbot for answering robotics-related queries.",
+    tech: ["Python", "TensorFlow", "NLP"],
+    status: "In Progress",
+    year: "2025"
+  },
+  {
+    id: 6,
+    title: "Maze Solver Robot",
+    category: "robots",
+    image: "../assets/images/project-placeholder.jpg",
+    description: "Autonomous robot that maps and solves mazes using flood-fill algorithm.",
+    tech: ["Arduino", "Ultrasonic Sensors", "C++"],
+    status: "Completed",
+    year: "2024"
+  },
+  {
+    id: 7,
+    title: "Weather Station IoT",
+    category: "iot",
+    image: "../assets/images/project-placeholder.jpg",
+    description: "Real-time weather monitoring system with cloud data logging.",
+    tech: ["NodeMCU", "DHT22", "ThingSpeak"],
+    status: "Completed",
+    year: "2024"
+  },
+  {
+    id: 8,
+    title: "Face Recognition System",
+    category: "ai",
+    image: "../assets/images/project-placeholder.jpg",
+    description: "Attendance system using facial recognition with high accuracy.",
+    tech: ["Python", "OpenCV", "dlib"],
+    status: "Completed",
+    year: "2024"
+  }
+];
 
-const tutorialsGrid = document.getElementById('projects-grid');
+// Render Projects
+const projectsGrid = document.getElementById('projects-grid');
 const filterBtns = document.querySelectorAll('.filter-btn');
 const modal = document.getElementById('project-modal');
 const modalBody = document.getElementById('modal-body');
 const modalClose = document.querySelector('.modal-close');
 
-// Fetch tutorials from JSON
-fetch('../js/tutorials.json')
-  .then(res => res.json())
-  .then(data => {
-    tutorials = data.tutorials;
-    renderTutorials();
-  })
-  .catch(err => {
-    console.error('Error loading tutorials:', err);
-    if (tutorialsGrid) {
-      tutorialsGrid.innerHTML = '<p style="text-align:center; color: #47a0b8;">Tutorials loading...</p>';
-    }
-  });
-
-function renderTutorials(filter = 'all') {
-  if (!tutorialsGrid) return;
-  
+function renderProjects(filter = 'all') {
   const filtered = filter === 'all' 
-    ? tutorials 
-    : tutorials.filter(t => t.category === filter);
+    ? projects 
+    : projects.filter(p => p.category === filter);
 
-  tutorialsGrid.innerHTML = filtered.map((tutorial) => `
-    <div class="project-card" data-id="${tutorial.id}">
+  projectsGrid.innerHTML = filtered.map((project, index) => `
+    <div class="project-card" data-id="${project.id}">
       <div class="project-image">
-        <img src="${tutorial.image}" alt="${tutorial.title}" onerror="this.src='../assets/images/Robo_Nexus_Logo.png'">
+        <img src="${project.image}" alt="${project.title}" onerror="this.src='../assets/images/Robo_Nexus_Logo.png'">
         <div class="project-overlay">
-          <span class="project-category">${tutorial.category.toUpperCase()}</span>
-          <span class="project-status ${tutorial.status === 'Completed' ? 'completed' : 'progress'}">${tutorial.status}</span>
+          <span class="project-category">${project.category.toUpperCase()}</span>
+          <span class="project-status ${project.status === 'Completed' ? 'completed' : 'progress'}">${project.status}</span>
         </div>
       </div>
       <div class="project-info">
-        <h3>${tutorial.title}</h3>
-        <p>${tutorial.description}</p>
+        <h3>${project.title}</h3>
+        <p>${project.description}</p>
         <div class="project-tech">
-          ${tutorial.tech.map(t => `<span class="tech-tag">${t}</span>`).join('')}
+          ${project.tech.map(t => `<span class="tech-tag">${t}</span>`).join('')}
         </div>
-        <button class="view-project-btn" data-id="${tutorial.id}">View Details <i class="fas fa-arrow-right"></i></button>
+        <button class="view-project-btn" data-id="${project.id}">View Details <i class="fas fa-arrow-right"></i></button>
       </div>
     </div>
   `).join('');
@@ -59,32 +125,32 @@ filterBtns.forEach(btn => {
   btn.addEventListener('click', () => {
     filterBtns.forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
-    renderTutorials(btn.dataset.filter);
+    renderProjects(btn.dataset.filter);
   });
 });
 
 // Modal
 function openModal(id) {
-  const tutorial = tutorials.find(t => t.id == id);
-  if (!tutorial || !modal) return;
+  const project = projects.find(p => p.id == id);
+  if (!project) return;
 
   modalBody.innerHTML = `
     <div class="modal-image">
-      <img src="${tutorial.image}" alt="${tutorial.title}" onerror="this.src='../assets/images/Robo_Nexus_Logo.png'">
+      <img src="${project.image}" alt="${project.title}" onerror="this.src='../assets/images/Robo_Nexus_Logo.png'">
     </div>
     <div class="modal-info">
-      <span class="modal-category">${tutorial.category.toUpperCase()}</span>
-      <h2>${tutorial.title}</h2>
-      <p class="modal-year"><i class="fas fa-calendar"></i> ${tutorial.year}</p>
-      <p class="modal-desc">${tutorial.description}</p>
+      <span class="modal-category">${project.category.toUpperCase()}</span>
+      <h2>${project.title}</h2>
+      <p class="modal-year"><i class="fas fa-calendar"></i> ${project.year}</p>
+      <p class="modal-desc">${project.description}</p>
       <div class="modal-tech">
         <h4>Technologies Used:</h4>
-        ${tutorial.tech.map(t => `<span class="tech-tag">${t}</span>`).join('')}
+        ${project.tech.map(t => `<span class="tech-tag">${t}</span>`).join('')}
       </div>
       <div class="modal-status">
-        <span class="${tutorial.status === 'Completed' ? 'completed' : 'progress'}">
-          <i class="fas ${tutorial.status === 'Completed' ? 'fa-check-circle' : 'fa-spinner fa-spin'}"></i>
-          ${tutorial.status}
+        <span class="${project.status === 'Completed' ? 'completed' : 'progress'}">
+          <i class="fas ${project.status === 'Completed' ? 'fa-check-circle' : 'fa-spinner fa-spin'}"></i>
+          ${project.status}
         </span>
       </div>
     </div>
@@ -94,18 +160,17 @@ function openModal(id) {
   document.body.style.overflow = 'hidden';
 }
 
-if (modalClose) {
-  modalClose.addEventListener('click', () => {
+modalClose.addEventListener('click', () => {
+  modal.classList.remove('active');
+  document.body.style.overflow = 'auto';
+});
+
+modal.addEventListener('click', (e) => {
+  if (e.target === modal) {
     modal.classList.remove('active');
     document.body.style.overflow = 'auto';
-  });
-}
+  }
+});
 
-if (modal) {
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal) {
-      modal.classList.remove('active');
-      document.body.style.overflow = 'auto';
-    }
-  });
-}
+// Initialize
+renderProjects();

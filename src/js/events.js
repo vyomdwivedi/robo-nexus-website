@@ -1,20 +1,66 @@
-// Events Data - Fetched from JSON
-let upcomingEvents = [];
-let pastEvents = [];
+// Events Data
+const upcomingEvents = [
+  {
+    id: 1,
+    title: "Robotics Workshop 2025",
+    date: "2025-02-15",
+    time: "10:00 AM - 4:00 PM",
+    location: "School Auditorium",
+    description: "Hands-on workshop covering Arduino basics, sensor integration, and building your first robot.",
+    type: "workshop",
+    registrationOpen: true,
+    spots: 30,
+    spotsLeft: 12
+  },
+  {
+    id: 2,
+    title: "Inter-School Robo Wars",
+    date: "2025-03-20",
+    time: "9:00 AM - 6:00 PM",
+    location: "Sports Complex",
+    description: "Battle robots competition! Build your combat robot and compete against other schools.",
+    type: "competition",
+    registrationOpen: true,
+    spots: 20,
+    spotsLeft: 8
+  },
+  {
+    id: 3,
+    title: "AI & ML Bootcamp",
+    date: "2025-04-10",
+    time: "11:00 AM - 3:00 PM",
+    location: "Computer Lab",
+    description: "Introduction to artificial intelligence and machine learning with Python.",
+    type: "bootcamp",
+    registrationOpen: false,
+    spots: 25,
+    spotsLeft: 25
+  }
+];
 
-// Fetch events from JSON
-fetch('../js/events.json')
-  .then(res => res.json())
-  .then(data => {
-    upcomingEvents = data.upcomingEvents;
-    pastEvents = data.pastEvents;
-    renderCalendar();
-    renderUpcomingEvents();
-    renderPastEvents();
-  })
-  .catch(err => {
-    console.error('Error loading events:', err);
-  });
+const pastEvents = [
+  {
+    title: "Club Inauguration",
+    date: "2024-08-15",
+    description: "Official launch of Robo Nexus with 30+ founding members.",
+    images: ["../assets/images/Robo_Nexus_Logo.png"],
+    highlights: ["30+ members joined", "First project announced", "Team formation"]
+  },
+  {
+    title: "Arduino Basics Workshop",
+    date: "2024-09-20",
+    description: "Introductory workshop on Arduino programming and electronics.",
+    images: ["../assets/images/Robo_Nexus_Logo.png"],
+    highlights: ["20 participants", "Built LED projects", "Sensor demos"]
+  },
+  {
+    title: "Hackathon 2024",
+    date: "2024-11-15",
+    description: "24-hour hackathon focused on IoT solutions for smart campus.",
+    images: ["../assets/images/Robo_Nexus_Logo.png"],
+    highlights: ["5 teams competed", "Smart attendance winner", "IoT innovations"]
+  }
+];
 
 // Calendar Data
 function generateCalendarDays(year, month) {
@@ -22,19 +68,15 @@ function generateCalendarDays(year, month) {
   const daysInMonth = new Date(year, month + 1, 0).getDate();
   const days = [];
 
-  // Combine all events
-  const allEvents = [
-    ...upcomingEvents.map(e => ({ ...e, isPast: false })),
-    ...pastEvents.map(e => ({ ...e, isPast: true }))
-  ];
-
+  // Empty cells for days before month starts
   for (let i = 0; i < firstDay; i++) {
     days.push({ day: '', event: null });
   }
 
+  // Days of the month
   for (let i = 1; i <= daysInMonth; i++) {
     const dateStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(i).padStart(2, '0')}`;
-    const event = allEvents.find(e => e.date === dateStr);
+    const event = upcomingEvents.find(e => e.date === dateStr);
     days.push({ day: i, event });
   }
 
@@ -59,9 +101,9 @@ function renderCalendar() {
   const days = generateCalendarDays(currentYear, currentMonth);
   
   calendarGrid.innerHTML = days.map(d => `
-    <div class="calendar-day ${d.event ? (d.event.isPast ? 'has-past-event' : 'has-event') : ''} ${d.day === '' ? 'empty' : ''}">
+    <div class="calendar-day ${d.event ? 'has-event' : ''} ${d.day === '' ? 'empty' : ''}">
       <span class="day-number">${d.day}</span>
-      ${d.event ? `<span class="event-dot ${d.event.isPast ? 'past' : ''}" title="${d.event.title}"></span>` : ''}
+      ${d.event ? `<span class="event-dot" title="${d.event.title}"></span>` : ''}
     </div>
   `).join('');
 }
@@ -86,10 +128,8 @@ document.getElementById('next-month')?.addEventListener('click', () => {
 });
 
 // Render Upcoming Events
-function renderUpcomingEvents() {
-  const upcomingContainer = document.getElementById('upcoming-events');
-  if (!upcomingContainer) return;
-
+const upcomingContainer = document.getElementById('upcoming-events');
+if (upcomingContainer) {
   upcomingContainer.innerHTML = upcomingEvents.map(event => `
     <div class="event-card reveal ${event.type}">
       <div class="event-date">
@@ -115,6 +155,7 @@ function renderUpcomingEvents() {
     </div>
   `).join('');
 
+  // Register button handlers
   document.querySelectorAll('.register-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       const eventId = btn.dataset.event;
@@ -124,10 +165,8 @@ function renderUpcomingEvents() {
 }
 
 // Render Past Events
-function renderPastEvents() {
-  const pastContainer = document.getElementById('past-events');
-  if (!pastContainer) return;
-
+const pastContainer = document.getElementById('past-events');
+if (pastContainer) {
   pastContainer.innerHTML = pastEvents.map(event => `
     <div class="past-event-card reveal">
       <div class="past-event-image">
@@ -167,6 +206,7 @@ document.querySelector('.reg-modal-close')?.addEventListener('click', () => {
 regForm?.addEventListener('submit', (e) => {
   e.preventDefault();
   
+  // Simulate registration
   const formData = new FormData(regForm);
   console.log('Registration:', Object.fromEntries(formData));
   
@@ -175,3 +215,6 @@ regForm?.addEventListener('submit', (e) => {
   document.body.style.overflow = 'auto';
   regForm.reset();
 });
+
+// Initialize
+renderCalendar();

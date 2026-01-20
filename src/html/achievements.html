@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alumni | Robo Nexus</title>
+    <title>Achievements | Robo Nexus</title>
 
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
@@ -45,7 +45,7 @@
             <li class="separator">|</li>
             <li><a class="nav-links" href="projects.html">Projects</a></li>
             <li class="separator">|</li>
-            <li><a class="nav-links" href="achievements.html">Achievements</a></li>
+            <li><a class="nav-links active" href="achievements.html">Achievements</a></li>
             <li class="separator">|</li>
             <li><a class="nav-links" href="events.html">Events</a></li>
             <li class="separator">|</li>
@@ -54,20 +54,49 @@
         </div>
       </nav>
 
-      <!-- ALUMNI HERO -->
-      <section class="page-hero alumni-hero">
-        <h1 class="glitch-text alumni-glitch" data-text="Alumni">Alumni</h1>
-        <p class="hero-subtitle reveal">The legends who built our foundation</p>
-        <a href="team.html" class="back-to-team-btn">
-          <i class="fas fa-arrow-left"></i>
-          Back to Team
-        </a>
+      <!-- ACHIEVEMENTS HERO -->
+      <section class="page-hero">
+        <h1 class="glitch-text" data-text="Achievements">Achievements</h1>
+        <p class="hero-subtitle reveal">Our journey of excellence and recognition</p>
       </section>
 
-      <!-- ALUMNI SECTION -->
-      <section class="alumni-section">
-        <div class="alumni-container" id="alumni-container">
-          <!-- Alumni cards injected by JS -->
+      <!-- STATS COUNTER -->
+      <section class="stats-section reveal">
+        <div class="stat-card">
+          <i class="fas fa-trophy"></i>
+          <span class="stat-number" data-target="15">0</span>
+          <span class="stat-label">Competitions Won</span>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-medal"></i>
+          <span class="stat-number" data-target="25">0</span>
+          <span class="stat-label">Awards Received</span>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-robot"></i>
+          <span class="stat-number" data-target="30">0</span>
+          <span class="stat-label">Projects Built</span>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-users"></i>
+          <span class="stat-number" data-target="15">0</span>
+          <span class="stat-label">Active Members</span>
+        </div>
+      </section>
+
+      <!-- TIMELINE -->
+      <section class="timeline-section">
+        <h2 class="section-title reveal">Our Journey</h2>
+        <div class="timeline" id="timeline">
+          <!-- Timeline items loaded via JS -->
+        </div>
+      </section>
+
+      <!-- CERTIFICATIONS -->
+      <section class="certifications-section">
+        <h2 class="section-title reveal">Certifications & Recognition</h2>
+        <div class="cert-grid" id="cert-grid">
+          <!-- Certs loaded via JS -->
         </div>
       </section>
 
@@ -84,5 +113,6 @@
     <!-- SCRIPTS -->
     <script src="../js/particles.js"></script>
     <script src="../js/script.js"></script>
+    <script src="../js/achievements.js"></script>
   </body>
 </html>
