@@ -221,7 +221,21 @@ if (teamContainer) {
       return res.json();
     })
     .then(data => {
-      const members = data.members;
+      // Define role hierarchy for sorting
+      const roleOrder = {
+        "President": 1,
+        "Vice President": 2,
+        "Core Member": 3,
+        "Member": 4
+      };
+
+      // Sort members by role first, then alphabetically by name
+      const members = data.members.sort((a, b) => {
+        const roleComparison = (roleOrder[a.role] || 999) - (roleOrder[b.role] || 999);
+        if (roleComparison !== 0) return roleComparison;
+        return a.name.localeCompare(b.name);
+      });
+
       teamContainer.innerHTML = members.map((member, index) => `
         <div class="team-card ${member.leavingSoon ? 'leaving-soon' : ''}">
           ${member.leavingSoon ? '<span class="leaving-badge"><i class="fas fa-crown"></i> Leaving Club Soon</span>' : ''}
