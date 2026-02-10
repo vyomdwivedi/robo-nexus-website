@@ -224,7 +224,7 @@ if (teamContainer) {
       const members = data.members;
       teamContainer.innerHTML = members.map((member, index) => `
         <div class="team-card ${member.leavingSoon ? 'leaving-soon' : ''}">
-          ${member.leavingSoon ? '<span class="leaving-badge"><i class="fas fa-crown"></i> Leaving Us Soon</span>' : ''}
+          ${member.leavingSoon ? '<span class="leaving-badge"><i class="fas fa-crown"></i> Leaving Club Soon</span>' : ''}
           <img src="../${member.image}" alt="${member.name}" onerror="this.src='../assets/images/Robo_Nexus_Logo.png'">
           <h2>${member.name}</h2>
           <p>${member.role}</p>
