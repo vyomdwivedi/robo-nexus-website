@@ -3,7 +3,7 @@ let upcomingEvents = [];
 let pastEvents = [];
 
 // Fetch events from JSON
-fetch('../js/events.json')
+fetch('/src/js/events.json')
   .then(res => res.json())
   .then(data => {
     upcomingEvents = data.upcomingEvents;

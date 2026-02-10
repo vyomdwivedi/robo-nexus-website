@@ -215,7 +215,7 @@ if (document.querySelector(".about-section")) {
 const teamContainer = document.getElementById("team-container");
 
 if (teamContainer) {
-  fetch("../js/team.json")
+  fetch("/src/js/team.json")
     .then(res => {
       if (!res.ok) throw new Error('Failed to load team data');
       return res.json();
@@ -239,7 +239,7 @@ if (teamContainer) {
       teamContainer.innerHTML = members.map((member, index) => `
         <div class="team-card ${member.leavingSoon ? 'leaving-soon' : ''}">
           ${member.leavingSoon ? '<span class="leaving-badge"><i class="fas fa-crown"></i> Leaving Club Soon</span>' : ''}
-          <img src="../${member.image}" alt="${member.name}" onerror="this.src='../assets/images/Robo_Nexus_Logo.png'">
+          <img src="/${member.image}" alt="${member.name}" onerror="this.src='/src/assets/images/Robo_Nexus_Logo.png'">
           <h2>${member.name}</h2>
           <p>${member.role}</p>
           <div class="social-links">
@@ -366,7 +366,7 @@ document.addEventListener('mousemove', (e) => {
 const alumniContainer = document.getElementById("alumni-container");
 
 if (alumniContainer) {
-  fetch("../js/alumni.json")
+  fetch("/src/js/alumni.json")
     .then(res => {
       if (!res.ok) throw new Error('Failed to load alumni data');
       return res.json();
@@ -384,7 +384,7 @@ if (alumniContainer) {
             <i class="fas fa-medal"></i>
           </div>
           ${member.upcoming ? '<span class="upcoming-badge"><i class="fas fa-hourglass-half"></i> Coming Soon</span>' : ''}
-          <img src="../${member.image}" alt="${member.name}" onerror="this.src='../assets/images/Robo_Nexus_Logo.png'">
+          <img src="/${member.image}" alt="${member.name}" onerror="this.src='/src/assets/images/Robo_Nexus_Logo.png'">
           <div class="alumni-info">
             <h2>${member.name}</h2>
             <p class="alumni-role">${member.role}</p>

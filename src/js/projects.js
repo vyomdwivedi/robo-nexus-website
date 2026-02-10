@@ -8,7 +8,7 @@ const modalBody = document.getElementById('modal-body');
 const modalClose = document.querySelector('.modal-close');
 
 // Fetch tutorials from JSON
-fetch('../js/tutorials.json')
+fetch('/src/js/tutorials.json')
   .then(res => res.json())
   .then(data => {
     tutorials = data.tutorials;
