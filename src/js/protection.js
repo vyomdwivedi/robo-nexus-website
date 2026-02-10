@@ -6,9 +6,9 @@ document.addEventListener('contextmenu', (e) => {
 // Disable keyboard shortcuts for inspect/view source
 document.addEventListener('keydown', (e) => {
   // F12
-  if (e.key === 'F12') {
-    e.preventDefault();
-  }
+//  if (e.key === 'F12') {
+//    e.preventDefault();
+//  }
   // Ctrl+Shift+I (Inspect)
   if (e.ctrlKey && e.shiftKey && e.key === 'I') {
     e.preventDefault();
