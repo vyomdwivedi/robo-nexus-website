@@ -1,4 +1,8 @@
-// Particle Background Animation
+// Particle Background Animation - DISABLED for performance
+// Causing browser glitches on Brave/Chromium browsers
+// Uncomment below to re-enable if needed
+
+/*
 const canvas = document.getElementById('particle-canvas');
 if (canvas) {
   const ctx = canvas.getContext('2d', { alpha: true });
@@ -136,3 +140,6 @@ if (canvas) {
     }, 100);
   }
 }
+*/
+
+console.log('Particles disabled for performance - website will load faster');
