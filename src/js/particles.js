@@ -1,16 +1,29 @@
 // Particle Background Animation
 const canvas = document.getElementById('particle-canvas');
 if (canvas) {
-  const ctx = canvas.getContext('2d');
+  const ctx = canvas.getContext('2d', { alpha: true });
+  
+  // Safari fix: Ensure canvas is visible
+  canvas.style.display = 'block';
+  canvas.style.position = 'fixed';
+  canvas.style.top = '0';
+  canvas.style.left = '0';
+  canvas.style.zIndex = '0';
+  canvas.style.pointerEvents = 'none';
+  
   let particles = [];
   let mouse = { x: null, y: null, radius: 150 };
 
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-
-  window.addEventListener('resize', () => {
+  // Safari fix: Use window dimensions
+  const setCanvasSize = () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
+  };
+  
+  setCanvasSize();
+
+  window.addEventListener('resize', () => {
+    setCanvasSize();
     init();
   });
 
@@ -108,6 +121,18 @@ if (canvas) {
     requestAnimationFrame(animate);
   }
 
-  init();
-  animate();
+  // Safari fix: Delay initialization
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+      setTimeout(() => {
+        init();
+        animate();
+      }, 100);
+    });
+  } else {
+    setTimeout(() => {
+      init();
+      animate();
+    }, 100);
+  }
 }
