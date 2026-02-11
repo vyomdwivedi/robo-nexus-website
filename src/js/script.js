@@ -6,14 +6,10 @@ gsap.registerPlugin(ScrollTrigger);
 const pageTransition = document.querySelector(".page-transition");
 
 if (pageTransition) {
-  gsap.set(pageTransition, { opacity: 1 });
+  // Immediately hide transition overlay
+  gsap.set(pageTransition, { opacity: 0 });
 
-  gsap.to(pageTransition, {
-    opacity: 0,
-    duration: 0.6,
-    ease: "power2.out"
-  });
-
+  // Disable page transition animations to prevent browser glitches
   document.querySelectorAll("a[href]").forEach(link => {
     const href = link.getAttribute("href");
 
@@ -23,18 +19,8 @@ if (pageTransition) {
       href.startsWith("mailto")
     ) return;
 
-    link.addEventListener("click", e => {
-      e.preventDefault();
-
-      gsap.to(pageTransition, {
-        opacity: 1,
-        duration: 0.4,
-        ease: "power2.in",
-        onComplete: () => {
-          window.location.href = href;
-        }
-      });
-    });
+    // Remove the transition animation - just navigate directly
+    // This prevents the browser glitch/hang issue
   });
 }
 

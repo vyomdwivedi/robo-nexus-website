@@ -45,7 +45,8 @@ body {
   background: #000;
   z-index: 9999;
   pointer-events: none;
-  opacity: 1;
+  opacity: 0;
+  display: none;
 }
 
 .page-content {
