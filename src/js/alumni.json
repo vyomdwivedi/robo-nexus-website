@@ -3,7 +3,7 @@
     "name": "Alumni's full name",
     "role": "Their role when they were in the club",
     "batch": "Year range (e.g., 2024-25)",
-    "image": "Image path (assets/images/filename.jpg)",
+    "image": "Image path - just use: assets/images/filename.jpg (will be converted to /src/assets/images/filename.jpg)",
     "contribution": "Brief description of their contribution (optional)",
     "upcoming": "true (for members who will join alumni soon) or remove this field",
     "links": {

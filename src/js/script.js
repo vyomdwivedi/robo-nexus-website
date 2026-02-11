@@ -239,7 +239,7 @@ if (teamContainer) {
       teamContainer.innerHTML = members.map((member, index) => `
         <div class="team-card ${member.leavingSoon ? 'leaving-soon' : ''}">
           ${member.leavingSoon ? '<span class="leaving-badge"><i class="fas fa-crown"></i> Leaving Club Soon</span>' : ''}
-          <img src="/${member.image}" alt="${member.name}" onerror="this.src='/src/assets/images/Robo_Nexus_Logo.png'">
+          <img src="/src/${member.image}" alt="${member.name}" onerror="this.src='/src/assets/images/Robo_Nexus_Logo.png'">
           <h2>${member.name}</h2>
           <p>${member.role}</p>
           <div class="social-links">
@@ -384,7 +384,7 @@ if (alumniContainer) {
             <i class="fas fa-medal"></i>
           </div>
           ${member.upcoming ? '<span class="upcoming-badge"><i class="fas fa-hourglass-half"></i> Coming Soon</span>' : ''}
-          <img src="/${member.image}" alt="${member.name}" onerror="this.src='/src/assets/images/Robo_Nexus_Logo.png'">
+          <img src="/src/${member.image}" alt="${member.name}" onerror="this.src='/src/assets/images/Robo_Nexus_Logo.png'">
           <div class="alumni-info">
             <h2>${member.name}</h2>
             <p class="alumni-role">${member.role}</p>

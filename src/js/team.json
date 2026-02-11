@@ -2,7 +2,7 @@
   "_FORMAT_GUIDE": {
     "name": "Member's full name",
     "role": "President / Vice President / Core Member / Member",
-    "image": "Image path (assets/images/filename.jpg)",
+    "image": "Image path - just use: assets/images/filename.jpg (will be converted to /src/assets/images/filename.jpg)",
     "leavingSoon": "true (only for members leaving soon) or remove this field",
     "links": {
       "github": "GitHub profile URL (optional)",

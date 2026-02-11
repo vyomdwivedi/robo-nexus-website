@@ -16,7 +16,7 @@
       "title": "Event name",
       "date": "YYYY-MM-DD format",
       "description": "Event description",
-      "images": ["Array of image paths"],
+      "images": ["Array of image paths - use /src/assets/images/filename.jpg"],
       "highlights": ["Array of highlights"]
     }
   },
@@ -27,7 +27,7 @@
       "title": "Club Inauguration",
       "date": "",
       "description": "Official launch of Robo Nexus with founding members.",
-      "images": ["../assets/images/Robo_Nexus_Logo.png"],
+      "images": ["/src/assets/images/Robo_Nexus_Logo.png"],
       "highlights": ["15+ members joined till now", "First project announced", "Team formation"]
     }
   ]
