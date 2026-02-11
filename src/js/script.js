@@ -222,10 +222,13 @@ if (teamContainer) {
         return a.name.localeCompare(b.name);
       });
 
+      // Add cache buster to force image reload
+      const cacheBuster = `?v=${Date.now()}`;
+
       teamContainer.innerHTML = members.map((member, index) => `
         <div class="team-card ${member.leavingSoon ? 'leaving-soon' : ''}">
           ${member.leavingSoon ? '<span class="leaving-badge"><i class="fas fa-crown"></i> Leaving Club Soon</span>' : ''}
-          <img src="/src/${member.image}" alt="${member.name}" onerror="this.src='/src/assets/images/Robo_Nexus_Logo.png'">
+          <img src="/src/${member.image}${cacheBuster}" alt="${member.name}" onerror="this.src='/src/assets/images/Robo_Nexus_Logo.png${cacheBuster}'">
           <h2>${member.name}</h2>
           <p>${member.role}</p>
           <div class="social-links">
